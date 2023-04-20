@@ -1,1 +1,1 @@
-Site para consultório odontológico que permite ao paciente conher um pouco da unidade e seus profissionais, serviços prestados, entrar em contato com a equipe de atendimento, agendar consultas e ter acesso ao blog informotivo.
+Site para consultório odontológico que permite ao paciente conhecer um pouco da unidade e seus profissionais, serviços prestados, entrar em contato com a equipe de atendimento, agendar consultas e ter acesso ao blog informativo.
