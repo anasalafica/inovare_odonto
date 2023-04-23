@@ -1,2 +1,5 @@
-# PROJETO SMILE ODONTO
-Site para consultório odontológico que permite ao paciente conhecer um pouco da unidade e seus profissionais, serviços prestados, entrar em contato com a equipe de atendimento, agendar consultas e ter acesso ao blog informativo.
+# Projeto Sorriso Odonto
+
+### Uma plataforma digital que proporciona uma experiência agradável e informativa para os pacientes. Nosso objetivo é criar um design elegante e fácil de usar, além de garantir que o conteúdo reflita uma abordagem moderna e compassiva do profissional para a odontologia.
+
+![imagem da tela principal site smile odonto](https://github.com/ThiagoCids/smile_odonto/blob/devthago/Imagens/Home.png)
