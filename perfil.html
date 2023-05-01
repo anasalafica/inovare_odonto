@@ -1,58 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página de perfil do usuário do site Smile Odonto">
+    <title>Perfil - Smile Odonto</title>
+    <link rel="shortcut icon" href="/smile_odonto/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo-nav">
+            <a href="home.html">
+              <img src="/smile_odonto/Imagens/Logos/Logotipo odontologia simples verde.png" alt="Logo_Smile_Odonto" height="125" width="125">
+            </a>
+          </li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="Agendar.html">Agendar</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+          <li><a href="Login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
-</head>
+    <main>
+      <h1>Perfil do Usuário</h1>
+      <section>
+        <h2>Dados Pessoais</h2>
+        <ul>
+          <li>Nome: <span>João Sillwa</span></li>
+          <li>CPF: <span>123.456.789-00</span></li>
+          <li>E-mail: <span>joao.sillwa@gmail.com</span></li>
+          <li>Telefone: <span>(11) 22233-4455</span></li>
+        </ul>
+        <button onclick="editarDados()">Editar Dados</button>
+      </section>
 
-<body>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li class="logo-nav">
-          <a href="home.html">
-            <img src="/smile_odonto/Imagens/Logos/Logotipo odontologia simples verde.png" alt="Logo_Smile_Odonto" height="125" width="125">
-          </a>
-        </li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="Agendar.html">Agendar</a></li>
-        <li><a href="Sobre.html">Sobre</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-        <li><a href="Contato.html">Contato</a></li>
-        <li><a href="Login.html">Login</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <main>
-    <h1>Perfil do Usuário</h1>
-    <section>
-      <h2>Dados Pessoais</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" value="Fulano de Tal" readonly>
-        <br><br>
-
-        <label for="cpf">CPF:</label>
-        <input type="cpf" id="cpf" name="cpf" value="111.222.333-44">
-        <br><br>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" value="fulano@example.com" readonly>
-        <br><br>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" value="(11) 1234-5678">
-        <br><br>
-
-        <input type="submit" value="Salvar">
-      </form>
-    </section>
-    <section>
+      <section>
       <h2>Agendamentos</h2>
       <table>
         <thead>
