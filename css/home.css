@@ -1,73 +1,93 @@
+:root {
+  --primary-color: #41c1ba;
+  --secondary-color: #376877;
+  --hover-color: rgb(5, 130, 146);
+  --font-size: 18px;
+}
+
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url(/Imagens/ImagensSite/Imagem_Fundo_Site.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+  height: 100vh;
+  background-image: url(/Imagens/ImagensSite/Imagem_Fundo_Site.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 nav {
-
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-img {
-    width: 150px;
-    height: 90px;
-    margin-left: 58px;
-    margin-right: 20px;
-
+nav img {
+  width: 150px;
+  height: 90px;
+  margin-left: 58px;
+  margin-right: 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
-nav a {
-    color: #376877;
-    background-color: #41c1ba;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 52.19px;
-    border-radius: 30px;
-    transition: background-color 0.4s;
+nav a,
+#login {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-size);
+  padding: 10px 52.19px;
+  border-radius: 30px;
+  transition: background-color 0.4s;
 }
 
-
-nav a:hover {
-    background-color: rgb(5, 130, 146);
-    color: #87cefa;
+nav a:hover,
+#login:hover {
+  background-color: var(--hover-color);
+  color: #87cefa;
 }
 
 #login {
-    color: #376877;
-    background-color: #41c1ba;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 52.19px;
-    border-radius: 30px;
-    transition: background-color 0.4s;
-    margin-right: 10px; 
-    border: none;
+  margin-right: 10px;
+  border: none;
 }
 
-#login:hover {
-    background-color: rgb(5, 130, 146);
-    color: #87cefa;
+@media only screen and (max-width: 600px) {
+  nav img {
+    width: 100px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  nav a,
+  #login {
+    font-size: 14px;
+    padding: 8px 26.19px;
+    border-radius: 20px;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
 }
