@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Editar Perfil</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
           </a>
         </li>
         <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="agendar.html">Agendar</a></li>
+        <li><a href="Agendar.html">Agendar</a></li>
         <li><a href="Sobre.html">Sobre</a></li>
         <li><a href="Blog.html">Blog</a></li>
         <li><a href="Contato.html">Contato</a></li>
@@ -26,9 +26,55 @@
       </ul>
     </nav>
   </header>
-  
-  <main> </main>
-  
+
+
+  <main>
+    <h1>Editar perfil</h1>
+    <form>
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Atualização de senha</legend>
+
+        <div>
+          <label for="senha_antiga">Senha antiga:</label>
+          <input type="password" id="senha_antiga" name="senha_antiga">
+        </div>
+
+        <div>
+          <label for="senha_nova">Nova senha:</label>
+          <input type="password" id="senha_nova" name="senha_nova">
+        </div>
+
+        <div>
+          <label for="confirmar_senha">Confirmar nova senha:</label>
+          <input type="password" id="confirmar_senha" name="confirmar_senha">
+        </div>
+
+      </fieldset>
+
+      <button type="submit">Salvar alterações</button>
+    </form>
+  </main>
+
   <footer>
     <nav>
       <ul class="social">
