@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li class="logo-nav">
+          <a href="/index.html">
+            <img src="/Imagens/Logos/Logotipo odontologia simples verde.png" alt="Logo_Smile_Odonto" height="125" width="125">
+          </a>
+        </li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#agendar">Agendar</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+  <img src="/Imagens/Imagens Diversas/Imagem 01.jpg" alt="Imagem_Principal">
+  <main> 
+    <h1 id="servicos">Serviços</h1>
+        <section>
+            <div class="slideshow-container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <h3>Clinica Geral</h3>
+                        <img src="/assets/imgCarrossel/clinica geral_R.jpeg" alt="Serviço 1">
+                        <p>Área da odontologia que cuida da saúde bucal de forma integral. Ela faz diagnósticos,
+                            prevenções e tratamentos de diversos problemas dentários. Ela também pode encaminhar você
+                            para outras especialidades se for necessário. Ela é a sua primeira opção quando você precisa
+                            ir ao dentista.</p>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <h3>Ortodontia</h3>
+                        <img src="/assets/imgCarrossel/ortodontia_R.jpg" alt="Serviço 2">
+                        <p>Área da odontologia que deixa os dentes e a mordida no lugar certo. Ela usa aparelhos que
+                            embelezam o sorriso e ajudam na mastigação.
+                            Ortodontia é conforto e felicidade bucal.</p>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <h3>Periodontia</h3>
+                        <img src="/assets/imgCarrossel/Image_Periodontia_R.jpg" alt="Serviço 3">
+                        <p>Área da odontologia que cuida da sua gengiva e do seu osso que segura os dentes. Ela evita e
+                            trata problemas que podem machucar essas partes. Ela também pode deixar o seu sorriso mais
+                            bonito com alguns tratamentos especiais.</p>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <h3>Endodontia</h3>
+                        <img src="/assets/imgCarrossel/endodontia_R.jpg" alt="Serviço 3">
+                        <p>Área da odontologia que cuida do interior do dente.Ela evita e resolve as doenças que causam
+                            dor e inflamação na polpa dentaria.Endodontia é o tratamento de canal que salva o seu
+                            sorriso.</p>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <h3>Estética</h3>
+                        <img src="/assets/imgCarrossel/estéticaR.jpg" alt="Serviço 3">
+                        <p>Área da odontologia que deixa o seu sorriso mais bonito e harmonioso. Ela pode mudar a cor, o
+                            formato e o tamanho dos seus dentes com diferentes técnicas. Ela também pode corrigir falhas
+                            e espaços que te incomodam.</p>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <h3>Implante</h3>
+                        <img src="/assets/imgCarrossel/implante_R.jpg" alt="Serviço 3">
+                        <p>Área da odontologia que recupera os dentes que você perdeu. Eles colocam um parafuso no seu
+                            osso e uma prótese por cima. Eles são seguros, duráveis e confortáveis. Eles deixam você
+                            mastigar melhor e sorrir mais bonito.</p>
+                    </div>
+                    <div class="slide swiper-slide ">
+                        <h3>Protese</h3>
+                        <img class="img-size" src="/assets/imgCarrossel/proteses_R.jpg" alt="Serviço 3">
+                        <p>Áre da odontologia que substitui os dentes que você perdeu ou que estão danificados. Elas
+                            podem ser fixas ou removíveis, e podem ser feitas de diferentes materiais. Elas devolvem a
+                            função e a beleza dos seus dentes, e melhoram a sua qualidade de vida.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+          <h1 id="agendar">Agendamento</h1>
+    <form id="agendamento-form" aria-labelledby="agendamento-titulo">
+        <fieldset>
+          <legend>Especialidade</legend>
+          <select id="especialidade" name="especialidade">
+              <option value="clinica_geral">Clínica Geral</option>
+              <option value="ortodontia">Ortodontia</option>
+              <option value="periodontia">Periodontia</option>
+              <option value="endodontia">Endodontia</option>
+              <option value="estetica">Estética</option>
+              <option value="implantodontia">Implantodontia</option>
+              <option value="protese">Prótese</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Médico</legend>
+          <select id="medico" name="medico">
+              <option value="dr_andre">Dr. André</option>
+              <option value="dra_natalia">Dra. Natália</option>
+              <option value="dr_jose_augusto">Dr. José Augusto</option>
+              <option value="dr_matheus">Dr. Matheus</option>
+              <option value="dra_patricia">Dra. Patrícia</option>
+              <option value="dr_ricardo">Dr. Ricardo</option>
+              <option value="dr_marcelo">Dr. Marcelo</option>
+              <option value="dra_raquel">Dra. Raquel</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data e horário</legend>
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data">
+          <br><br>
+
+          <label for="horario">Horário:</label>
+          <input type="time" id="horario" name="horario">
+          <br><br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Agendar">
+    </form>
+
+    <h1 id="sobre">Sobre Nós</h1>
+    <p>Apaixonados e dedicados a oferecer o melhor serviço de odontologia para você e sua família. Contamos com uma equipe de dentistas qualificados e parceiros confiáveis, que oferecem os mais diversos tipos de procedimentos odontológicos, desde os mais simples até os mais complexos.</p>
+        <p>Nossa missão é facilitar o acesso à saúde bucal, proporcionando comodidade, segurança e qualidade em todas as etapas do seu tratamento. Queremos que você se sinta bem cuidade e satisfeito com o seu sorriso.</p>
+        <h2>Conheça nossa equipe!</h2>
+        <section>
+            <div class="carrousel">
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/1 3x4.png" alt="Dr. André" height="304" width="228">
+                    <h3>Dr. André</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/4 3x4.png" alt="Dra. Natália"  height="304" width="228">
+                    <h3>Dra. Natália</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/3 3x4.png" alt="Dr. José Augusto"  height="304" width="228">
+                    <h3>Dr. José Augusto</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/6 3x4.png" alt="Dr. Matheus"  height="304" width="228">
+                    <h3>Dr. Matheus</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/8 3x4.png" alt="Dra. Patricia"  height="304" width="228"></div>
+                    <h3>Dra. Patrícia</h3>
+                    <p>Especialista em Ortodontia</p>
+                </article>               
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/2 3x4.png" alt="Dr. Ricardo"  height="304" width="228">
+                    <h3>Dr. Ricardo</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/5 3x4.png" alt="Dr. Marcelo"  height="304" width="228">
+                    <h3>Dr. Marcelo</h3>
+                    <p>Especialista em ...</p>
+                </article>
+                <article class="slide">
+                    <img src="Imagens/modelos_dentistas/7 3x4.png" alt="Dra. Raquel"  height="304" width="228">
+                    <h3>Dr. Raquel</h3>
+                    <p>Especialista em ...</p>
+                </article>
+            </div>    
+        </section>
+
+  <h1 id="blog">Blog</h1>  
+  <article>
+        <header>
+            <h1>Hábitos que prejudicam a saúde bucal</h1>
+            <h2>Escovar os dentes, passar fio dental e ir ao dentista regularmente são rotinas necessárias para manter uma boa saúde bucal. Porém...</h2>
+            <p>Tempo de leitura: 1 minuto</p>
+        </header>
+        <p>Conteúdo do artigo...</p>
+        <a href="https://blog.inpaodental.com/habitos-que-prejudicam-a-saude-bucal/" target="_blank" rel="noopener">Leia mais</a>
+    </article>
+
+  <h1 id="contato">Contato</h1>  
+  <h2>Se você tem alguma dúvida, sugestão ou reclamação, entre em contato conosco:</h2>
+    <form action="enviar.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone">
+      <br><br>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+      <br><br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </form>
+
+    <section class="login">
+        <h1 id="login">Login</h1>
+        <form>
+            <label for="username">E-MAIL:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">SENHA:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Entrar">
+        </form>
+        <p><a href="#">Esqueci minha senha</a></p>
+        <p>Ainda não é cliente? <a href="#">Cadastre-se gratuitamente!</a></p>
+    </section>
+
+    <h1 id="perfil">Perfil do Usuário</h1>
+      <section>
+        <h2>Dados Pessoais</h2>
+        <ul>
+          <li>Nome: <span>João Sillwa</span></li>
+          <li>CPF: <span>123.456.789-00</span></li>
+          <li>E-mail: <span>joao.sillwa@gmail.com</span></li>
+          <li>Telefone: <span>(11) 22233-4455</span></li>
+        </ul>
+        <button onclick="editarDados()">Editar Dados</button>
+      </section>
+
+      <section>
+      <h2>Agendamentos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Especialidade</th>
+            <th>Médico</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Endodontia</td>
+            <td>Dra. Maria</td>
+            <td>01/05/2023</td>
+            <td>09:00</td>
+            <td>
+              <button>Cancelar</button>
+              <button>Remarcar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ortodontia</td>
+            <td>Dr. Lucas</td>
+            <td>05/05/2023</td>
+            <td>15:00</td>
+            <td>
+              <button>Cancelar</button>
+              <button>Remarcar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+  
+  <footer>
+    <nav>
+      <ul class="social">
+        <li><a href="https://www.youtube.com"><img src="/smile_odonto/Imagens/Logos/youtube.png" alt="Logo_youtube" height="40"></a></li>
+        <li><a href="https://www.twitter.com"><img src="/smile_odonto/Imagens/Logos/twitter.png" alt="Logo_twitter" height="40"></a></li>
+        <li><a href="https://www.instagram.com"><img src="/smile_odonto/Imagens/Logos/instagram.png" alt="Logo_instagram" height="40"></a></li>
+        <li><a href="https://www.linkedin.com"><img src="/smile_odonto/Imagens/Logos/linkedin.png" alt="Logo_linkedin" height="40"></a></li>
+        <li><a href="https://www.facebook.com"><img src="/smile_odonto/Imagens/Logos/facebook.png" alt="Logo_facebook" height="40"></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
