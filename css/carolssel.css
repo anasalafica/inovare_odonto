@@ -60,8 +60,8 @@
   }
   
   .swiper-pagination {
-    position: absolute;
-    margin-top: 10px;
+    position:relative;
+    margin-top: 100px;
     bottom: 10px;
     display: flex;
     justify-content: center;
@@ -70,10 +70,10 @@
   }
   
   .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    width: 32.03px;
+    height: 32.03px;
     margin: 10 20px;
     border-radius: 50%;
     background-color: var(--primary-color);
-    border: 2px solid #000000;
+    border: 2.67px solid #000000;
   }

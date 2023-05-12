@@ -7,13 +7,6 @@
 
 /* Global styles */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   height: 100vh;
   background-image: url(/Imagens/ImagensSite/Imagem_Fundo_Site.png);
@@ -22,4 +15,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+}
+
+main {
+  width: 1500px;
+  margin: 0 auto;
+  
 }
