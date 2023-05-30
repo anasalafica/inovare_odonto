@@ -15,12 +15,56 @@ body {
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  position: relative; 
 }
 
-main {
-  width: 1500px;
-  margin: 0 auto;
-  margin-top: 122px;
-  
-  
+.main-container {
+  position: relative; 
+}
+
+.background-filter-content {
+  width: 1440px;
+  height: 675px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #99D9D9;
+  clip-path: polygon(0 11%, 100% 29%, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 60%);
+  z-index: -1;
+}
+
+.slide-box{
+box-sizing: border-box;
+width: 1281px;
+height: 420px;
+background: #FFFFFF;
+border: 20px solid #A58272;
+border-radius: 20px;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 100px auto 0;
+}
+
+section article p {
+display: flex;
+flex-direction: column;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 60px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #365B6D;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-top: 10rem;
+}
+
+section article p + p {
+  margin-top: 0rem;
 }
