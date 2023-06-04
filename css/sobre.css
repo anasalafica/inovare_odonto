@@ -1,0 +1,117 @@
+.main-sobre {
+
+}
+
+.tx-sobre {
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin: 1.875rem 5rem;
+    font-weight: 4.375rem;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #365B6D;
+}
+
+.h1-sobre {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 4.375rem;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #365B6D;
+}
+
+.carrousel-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex: none;
+    flex-grow: 0;
+    margin: 0rem 0.5rem;
+}
+
+.buttom-left-sobre {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+.slide-sobre {
+    width: 13.75rem;
+    height: 24.6875rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: none;
+    flex-grow: 0;
+    margin: 1.25rem;
+    border: 0.1rem solid #365B6D;
+
+    font-family: 'Montserrat';
+    align-items: center;
+    text-align: center;
+    color: #365B6D;
+    font-style: normal;
+    font-weight: 37.5rem;
+}
+
+#dent1 {
+    display: block;
+}
+
+#dent2 {
+    display: block;
+}
+
+#dent3 {
+    display: block;
+}
+
+#dent4 {
+    display: none;
+}
+
+#dent5 {
+    display: none;
+}
+
+#dent6 {
+    display: none;
+}
+
+#dent7 {
+    display: none;
+}
+
+.h3-sobre{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5625rem;
+    color: #365B6D;
+    padding: 0rem 1.25rem;
+}
+
+.img-sobre{
+    width: 10.4375rem;
+    height: 13.8125rem;
+    top: 2.1875rem;
+    left: 1rem;
+    border-radius: 5.25rem;
+}
+
+.descricao-sobre {
+    font-size: 1rem;
+    display: none;
+    flex-direction: row;
+}
+
