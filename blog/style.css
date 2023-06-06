@@ -88,3 +88,20 @@ element.style {
     font-size: 1.5rem;
     color: #365B6D;
 }
+
+.image-principal {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.figure-footer {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+}
