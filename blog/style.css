@@ -1,2 +1,70 @@
 @charset "UTF-8";
+a {
+    text-decoration: none;
+}
+body{
+    min-width: 17.5rem;
+    max-width: 62.5rem;
+    margin: auto;
+}
+
+.title-materia01 {
+   font-family: 'Dancing Script', cursive;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2.5rem;
+   color: #365B6D;
+   text-align: center;
+}
+
+.intro-materia01 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #365B6D
+
+}
+
+.list-order-materia01 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #365B6D
+}
+
+.conclusao {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #365B6D
+}
+
+.botao{
+    width: 11.25rem;
+    height: 3.27rem;
+
+    background: #41C1BA;
+    border-radius: 0.94rem;
+    border-color:snow;
+
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 43.75rem;
+    line-height: 0.81rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #365B6D;
+}
+
+.conteiner-botao {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem ;
+    align-items: center;
+    text-decoration: none;
+}
+
+.figure-footer {
+
+}
+  
 
