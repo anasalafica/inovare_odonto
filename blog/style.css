@@ -2,13 +2,14 @@
 a {
     text-decoration: none;
 }
-body{
+
+element.style {
     min-width: 17.5rem;
-    max-width: 62.5rem;
-    margin: auto;
+    max-width: 56.25rem;
+    margin: 0 auto;
 }
 
-.title-materia01 {
+.title {
    font-family: 'Dancing Script', cursive;
    font-family: 'Montserrat', sans-serif;
    font-size: 2.5rem;
@@ -16,26 +17,28 @@ body{
    text-align: center;
 }
 
-.intro-materia01 {
+.intro {
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #365B6D
+    color: #365B6D;
+    text-align: center;
 
 }
 
-.list-order-materia01 {
+.list-order {
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #365B6D
+    color: #365B6D;
 }
 
 .conclusao {
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #365B6D
+    color: #365B6D;
+    text-align: center
 }
 
 .botao{
@@ -63,8 +66,25 @@ body{
     text-decoration: none;
 }
 
-.figure-footer {
-
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #365B6D;
+    text-align: center;
 }
   
+.sobre {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #365B6D;
+    text-align: center;
+}
 
+.list-unorder {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #365B6D;
+}
