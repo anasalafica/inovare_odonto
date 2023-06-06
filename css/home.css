@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #41c1ba;
+  --secondary-color: #376877;
+  --hover-color: rgb(5, 130, 146);
+  --font-size: 18px;
+}
+
+/* Global styles */
+
+body {
+  height: 100vh;
+  background-image: url(/Imagens/ImagensSite/Imagem_Fundo_Site.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+main {
+  width: 1500px;
+  margin: 0 auto;
+  margin-top: 122px;
+  
+  
+}
