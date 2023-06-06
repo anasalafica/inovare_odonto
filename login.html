@@ -3,56 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/favicon_inovare_odonto/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Login-Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&       display=swap" rel="stylesheet">
     <title>Login</title>
-    <style>
-        /* Estilos CSS aqui */
-    </style>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <ul>
                 <li>
                     <a href="home.html">
-                        <img src="/smile_odonto/Imagens/Logos/Logotipo odontologia simples verde.png" alt="Logo_Smile_Odonto" height="125" width="125">
-                    </a>
+                        <img src="Assets/logo_header.svg" alt="LogoInovareOdonto" height="125" width="125">
+                    </a>   
                 </li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="agendar.html">Agendar</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-                <li><a href="Login.html">Login</a></li>
+
+                <li><a href="servicos.html"><button class="buttonPadrao" role="button">Serviços</button></a></li>
+                <li><a href="agendar.html"><button class="buttonPadrao" role="button">Agendar</button></a></li>
+                <li><a href="Sobre.html"><button class="buttonPadrao" role="button">Sobre</button></a></li>
+                <li><a href="Blog.html"><button class="buttonPadrao" role="button">Blog</button></a></li>
+                <li><a href="Contato.html"><button class="buttonPadrao" role="button">Contato</button></a></li>
+                <li><a href="Login.html"><button class="buttonPadrao" role="button">Login</button></a></li>
             </ul>
         </nav> 
     </header>
 
     <main>
         <section class="login">
-            <h1>Login</h1>
             <form>
-                <label for="username">E-MAIL:</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">SENHA:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Entrar">
+                <img class="telaLogin" src="Assets/logo_Main.svg" alt="LogoMain">
+                
+                <input class="telaLogin" type="text" id="username" name="username" placeholder="Email">
+
+                <input class="telaLogin" type="password" id="password" name="password"  placeholder="Senha">
+                
+
+                <div class="lembrasenha">
+                <input  type="checkbox" type="checkbox" id="lembrarsenha" name="lembrar">
+                <label   for="lembrar"><strong>Lembrar</strong></label>
+
+                <div class="popupLembrarSenha">
+                <p><a href="recuperarsenha.html" class="pointer" id="esqueceuSenha"><strong>Esqueceu a senha?</strong></a></p>
+
+                </div>    
+                </div>
+
+                <div class="semCadastro">
+                
+                    <a href="Usuariologado.html"><input  class="logar" type="button" value="Login" id="botaologin"></a></input>    
+                
+
+                <p class="logar">Ainda não tem cadastro? 
+                    <a class="pointer" href="cadastrar.html"><strong>Cadastre-se Aqui</strong></a>
+                </p>
+                </div>
+
             </form>
-            <p><a href="#">Esqueci minha senha</a></p>
-            <p>Ainda não é cliente? <a href="#">Cadastre-se gratuitamente!</a></p>
         </section>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="https://www.youtube.com"><img src="/smile_odonto/Imagens/Logos/youtube.png" alt="Logo_youtube"height="40"></a></li>
-                <li><a href="https://www.twitter.com"><img src="/smile_odonto/Imagens/Logos/twitter.png" alt="Logo_twitter"height="40"></a></li>
-                <li><a href="https://www.instagran.com"><img src="/smile_odonto/Imagens/Logos/instagran.png" alt="Logo_instagran"height="40"></a></li>
-                <li><a href="https://www.linkedin.com"><img src="/smile_odonto/Imagens/Logos/linkedin.png" alt="Logo_linkedin"height="40"></a></li>
-                <li><a href="https://www.facebook.com"><img src="/smile_odonto/Imagens/Logos/facebook.png" alt="Logo_facebook"height="40"></a></li>           
-            </ul>
+        <nav class="redesSociais">
+            <ol>
+                <li><a href="https://www.instagran.com"><img src="Assets/icon _instagram_.svg" alt="Logo_instagran"height="40"></a></li>
+                <li><a href="https://www.facebook.com"><img src="Assets/icon _facebook_.svg" alt="Logo_facebook"height="40"></a></li> 
+                <li><a href="https://www.youtube.com"><img src="Assets/icon _youtube_.svg" alt="Logo_youtube"height="40"></a></li>             
+            </ol>
         </nav>
     </footer>
+             <!--Tela Popup para redefinir senha esquecida-->
+
+            </div>
+        </div>      
+    </div>    
+</div>
+
+        <!--Tela Popup de verificacao OTP-->
+        <div class="verificarOtpHidden">
+            <div class="modal-container">
+                <div class="modal" id="PopupOtp">
+                    <img src="Assets/logo_header.svg" alt="logo_pequeno">
+                    <h2 class="fontePopup">Esqueceu a senha</h2>
+        
+                    <button onclick="closeModal()" class="btn-fecharOtp" >⨉</button>
+                
+                    <p class="fontePopup"> Digite o email associado a sua conta na inovare Odonto</p>
+                
+                    <input type="text" class="inputEmail" placeholder="E-mail" id="inputPopup">
+                
+                    <form>
+        
+                    <div class="buttonPopup">
+        
+                        <input type="button" class="buttonPadrao" value="Verificar" id="proseguir">
+        
+                    </div>
+                </div>      
+            </div> 
+        
+            
+        
+        
+        </div>
+        <!--Tela Popup De Verificacao OTP-->
+
+
+
+
+
+        
+
+        <!--Tela Popup de usuário Logado-->
+        
+
+
+
+
+
+
 </body>
 </html>
+
+

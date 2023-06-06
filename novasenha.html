@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/favicon_inovare_odonto/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Login-Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&       display=swap" rel="stylesheet">
+    <title>Nova senha</title>
+</head>
+<body>
+    
+    <div class="cadastrarNovaSenha">
+        <div class="modal-container">
+            <div class="modal" id="PopupOtp">
+                <img src="Assets/logo_header.svg" alt="logo_pequeno">
+                <h2 class="fontePopup">Criar Nova Senha</h2>
+    
+                <p class="voltarLogin"><a class="pointer" href="Login.html">voltar</a></p>
+            
+                <p class="fontePopup">Solicitaremos essa senha sempre que você fizer login.
+                </p>
+                
+                <div class="inputsNovaSenha">
+                    <input type = "password"  name="nova senha" class="inputformulario" placeholder="Nova Senha" id="inputNovaSenha">
+
+                    <p class="fontePopup" id="avisoSenha">As senhas devem ter pelo menos 6 caracteres.</p>
+
+                    <input type = "password" name="repetir nova senha" class="inputformulario" placeholder="Digite Novamente" id="inputNovaSenharepita">
+                </div>
+                
+            
+                <form>
+    
+                <div class="buttonPopup">
+    
+                    <a href="Login.html"><input type="button" class="buttonPadrao" value="Salvar Alterações" id="verificar"></a>
+    
+                </div>
+            </div>      
+        </div>
+    </div> 
+
+</body>
+</html>
