@@ -112,3 +112,43 @@ img {
     overflow: hidden;
 }
 
+.image-principal-blog {
+    position: relative;
+    width:1050px;
+    height: 900px;
+    left: 30px;
+    top: 50px;
+    
+}
+
+.subtitle-blog {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #365B6D;
+    position: absolute;
+    width: 738px;
+    height: 137px;
+    left: 595px;
+    top: 350px;
+    font-weight: 600;
+    line-height: 203.5%;
+    text-align: center;
+}
+
+/*
+.subtitle-blog {
+    position: absolute;
+    width: 720px;
+    height: 137px;
+    left: 595px;
+    top: 4122px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 203.5%;
+    text-align: center;
+    color: #365B6D;
+}
+*/
