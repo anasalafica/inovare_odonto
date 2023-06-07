@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav img {
+    width: 150px;
+    height: 90px;
+    margin-left: 58px;
+    margin-right: 20px;
+}
+
+nav li {
+    margin: 0 10px;
+    padding-top: 40px;
+}
+
+nav a,
+#login {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: var(--font-size);
+    padding: 10px 52.19px;
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 30px;
+    transition: background-color 0.4s;
+}
+
+nav a:hover,
+#login:hover {
+    background-color: var(--hover-color);
+    color: #87cefa;
+}
+
+#login {
+    border: none;
+}
+
+
