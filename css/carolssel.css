@@ -1,55 +1,99 @@
- .slideshow-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0px 80px;
-  gap: 43px;
+/*.slide {
   position: relative;
-  margin-top: 20px;
+  perspective: 10000px;
+}*/
+
+.slide .flip-card-inner {
+  width: 340px;
+  height: 350px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
 }
 
-.slide img {
+.slide:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.slide .flip-card-front,
+.slide .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.slide .flip-card-front {
+  z-index: 2;
+}
+
+.slide .flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.slide .flip-card-front img,
+.slide .flip-card-back p {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 30px;
 }
 
-.slide h3 {
-position: absolute;
-left: 10.88%;
-right: 10.88%;
-top: 76%;
-bottom: 15.71%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 15px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #000000;
+.slide .flip-card-back {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.slide .flip-card-back h3 {
+  margin-top: 0;
+}
+
+section div div div div div h3 {
+  position: absolute;
+  left: 14.41%;
+  right: 14.41%;
+  top: 70.29%;
+  bottom: 21.71%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 15px;
+  /* or 47% */
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #000000;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 340px;
-  height: 350px;
-  object-fit: cover;
-}
+.slide-box{
+  position: inherit;  
+  box-sizing: border-box;
+  width: 1281px;
+  height: 420px;
+  background: #FFFFFF;
+  border: 20px solid #A58272;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 100px auto 0;
+  }
 
-
-
-
-
-  
+  .background-filter-content {
+    width: 1440px;
+    height: 675px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #99D9D9;
+    clip-path: polygon(0 11%, 100% 29%, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 60%);
+    z-index: -1;
+  }

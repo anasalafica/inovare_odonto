@@ -7,6 +7,12 @@
 
 /* Global styles */
 
+html {
+  scroll-behavior:smooth;
+}
+
+
+
 body {
   height: 100vh;
   background-image: url(/Imagens/ImagensSite/Imagem_Fundo_Site.png);
@@ -22,32 +28,45 @@ body {
   position: relative; 
 }
 
-.background-filter-content {
-  width: 1440px;
-  height: 675px;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #99D9D9;
-  clip-path: polygon(0 11%, 100% 29%, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 60%);
-  z-index: -1;
+.section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
-.slide-box{
-box-sizing: border-box;
-width: 1281px;
-height: 420px;
-background: #FFFFFF;
-border: 20px solid #A58272;
-border-radius: 20px;
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 100px auto 0;
+main section figure {
+  padding-left: 20rem;
 }
 
-section article p {
+.btn-agendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  padding: 28px 29px;
+  gap: 10px;
+  width: 376px;
+  height: 74px;
+  background: #41C1BA;
+  border-radius: 20px;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 15px;
+  color: #365B6D;
+}
+
+.btn-agendar:hover {
+    background-color: var(--hover-color);
+    color: #87cefa;
+}
+
+.text1{
 display: flex;
 flex-direction: column;
 font-family: 'Montserrat';
@@ -55,7 +74,21 @@ font-style: normal;
 font-weight: 700;
 font-size: 32px;
 line-height: 60px;
+align-items: center;
+text-align: center;
+margin-top: -10rem;
+margin-left: -50rem;
+color: #3A7B84;
+}
+
+.text2 {
 display: flex;
+flex-direction: column;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 60px;
 align-items: center;
 text-align: center;
 color: #365B6D;
@@ -67,4 +100,24 @@ margin-top: 10rem;
 
 section article p + p {
   margin-top: 0rem;
+}
+
+.social-midia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60rem;
+    margin-top: -50px;
+}
+
+section figure img {
+  margin: 0 10px;
+}
+
+.Toothbrush{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-right: 20rem;
 }

@@ -12,20 +12,23 @@
     <link rel="stylesheet" href="/css/carolssel.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/footer.css">
-     <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
 
-     <!-- Initialize Swiper -->
-     <script src="/js/slideshow.js" defer></script>
+    <!-- Initialize Swiper -->
+    <!-- <script src="/js/slideshow.js" defer></script>
+    <style>-->
+
+    </style>
     <title>Smile Odonto</title>
 </head>
 
 <body>
+
     <header>
-        <nav a href="#"><img src="/Imagens/Logos/LogoSemfundo2.png" alt="Logo"></a>
+        <nav id="menu"><a href="/servico.html"><img src="/assets/background/Logotipo_inovareodonto 3.svg" alt="Logo"></a>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="#servico">Serviços</a></li>
                 <li><a href="#">Agendar</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Blog</a></li>
@@ -35,56 +38,128 @@
         </nav>
     </header>
 
-
     <main class="main-container">
-        <section>
+        <section class="section-container">
+            <figure>
+                <img class="right" src="/assets/background/cliente.svg">
+            </figure>
+            <figure>
+                <img class="direita" src="/assets/background/Logotipo_inovareodonto 2.svg" alt="">
+            </figure>
+        </section>
+
+        <section><a name="home"></a>
             <article>
-                <p>
-                    Somos Inquietos e Inovadores. 
+                <p class="text1">
+                    Um sorriso bonito, é o cartão de visita perfeito. <br>
+                    Cuide do seu com a nossa ajuda.
                 </p>
-                <p>
-                    Levamos o melhor da odontoloigia, sempre com condições acessíveis a todos.
+            </article>
+            <div>
+                <button class="btn-agendar">Agendar</button>
+            </div>
+            <figure class="social-midia"><img src="/assets/background/instagram.svg" alt="">
+            <img src="/assets/background/facebook.svg" alt="">
+            <img src="/assets/background/yt.svg" alt="">
+            </figure>            
+        </section>
+
+        <section><a name="servico"></a>
+            <figure class="Toothbrush">
+                <img src="/assets/background/escova-removebg-preview 1.svg" alt="">
+            </figure>
+            <article>
+                <p class="text2">
+                    Somos Inquietos e Inovadores. <br>
+                    Levamos o melhor da odontologia, sempre com condições acessíveis a todos.
                 </p>
             </article>
         </section>
+
+
         <section class="slide-box">
             <div class="slideshow-container swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="slide swiper-slide">
-                        <h3>Clinica Geral</h3>
-                        <img src="/assets/imgCarossel/clinica geral_R.jpeg" alt="Serviço 1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Clinica Geral</h3>
+                                <img src="/assets/imgCarossel/clinica geral_R.jpeg" alt="Serviço 1">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <h3>Ortodontia</h3>
-                        <img src="/assets/imgCarossel/ortodontia_R.jpg" alt="Serviço 2">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Ortodontia</h3>
+                                <img src="/assets/imgCarossel/ortodontia_R.jpg" alt="Serviço 2">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <h3>Periodontia</h3>
-                        <img src="/assets/imgCarossel/Image_Periodontia_R.jpg" alt="Serviço 3">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Periodontia</h3>
+                                <img src="/assets/imgCarossel/Image_Periodontia_R.jpg" alt="Serviço 3">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <h3>Endodontia</h3>
-                        <img src="/assets/imgCarossel/endodontia_R.jpg" alt="Serviço 3">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Endodontia</h3>
+                                <img src="/assets/imgCarossel/endodontia_R.jpg" alt="Serviço 4">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <h3>Estética</h3>
-                        <img src="/assets/imgCarossel/estéticaR.jpg" alt="Serviço 3">
-                        
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Estética</h3>
+                                <img src="/assets/imgCarossel/estéticaR.jpg" alt="Serviço 5">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <h3>Implante</h3>
-                        <img src="/assets/imgCarossel/implante_R.jpg" alt="Serviço 3">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Implante</h3>
+                                <img src="/assets/imgCarossel/implante_R.jpg" alt="Serviço 6">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="slide swiper-slide ">
-                        <h3>Protese</h3>
-                        <img class="img-size" src="/assets/imgCarossel/proteses_R.jpg" alt="Serviço 3">
+                    <div class="slide swiper-slide">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Protese</h3>
+                                <img class="img-size" src="/assets/imgCarossel/proteses_R.jpg" alt="Serviço 7">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Texto do back</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div class="background-filter-content">
-                </div>
+            </div>
+            <div class="background-filter-content"></div>
         </section>
-    </main>
-</body>
 
-</html>
+    </main
