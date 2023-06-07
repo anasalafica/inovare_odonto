@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 a {
     text-decoration: none;
 }
@@ -44,6 +46,7 @@ element.style {
 .botao{
     width: 11.25rem;
     height: 3.27rem;
+    
 
     background: #41C1BA;
     border-radius: 0.94rem;
@@ -61,9 +64,11 @@ element.style {
 .conteiner-botao {
     display: flex;
     flex-direction: row;
-    gap: 2.5rem ;
-    align-items: center;
     text-decoration: none;
+    justify-content: center;
+    gap: 55rem;
+    width: 100%;
+    height: auto;
 }
 
 .subtitle {
@@ -89,12 +94,15 @@ element.style {
     color: #365B6D;
 }
 
+
+img {
+    width: 100%;
+    height: auto;
+}
 .image-principal {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    width: auto;
-    height: 100%;
     box-sizing: border-box;
 }
 
@@ -102,6 +110,5 @@ element.style {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    width: auto;
-    height: 100%;
 }
+
