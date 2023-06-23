@@ -1,3 +1,49 @@
+/* Estilos gerais */
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 
+    
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
 
+.intro {
+    
+    text-align: center;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para desktop */
+@media (min-width: 900px) {
+    .intro {
+        display: flex;
+        align-items: center;
+    }
+    .intro img {
+        margin-right: 20px;
+    }
+}
+
+h1 {
+    font-size: clamp(1.75em, 1em + 3vw);
+    text-align: center;
+    
+}
+
+h3 {
+    text-align:left;
+}
+
+h4 {
+    text-align: center;
+}
