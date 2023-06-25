@@ -2,6 +2,16 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 header nav ul {
@@ -16,11 +26,11 @@ nav img {
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 40px;
     padding-top: 40px;
 }
 
-nav a,
+nav ul li a,
 #login {
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -33,7 +43,7 @@ nav a,
     transition: background-color 0.4s;
 }
 
-nav a:hover,
+nav ul li a:hover,
 #login:hover {
     background-color: var(--hover-color);
     color: #87cefa;
@@ -42,5 +52,4 @@ nav a:hover,
 #login {
     border: none;
 }
-
 
