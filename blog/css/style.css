@@ -10,7 +10,8 @@ body {
 
 section.slider {
   margin: 0 auto;
-  width: 100%;
+  max-width: 960px;
+  /*width: 100%;*/
   height: auto;
   padding: 0 !important;
   overflow: hidden;
@@ -105,7 +106,7 @@ hr {
   border: none;
   background-color: #A58272;
   height: 5px;
-  width: 90%; 
+  width: 50%; 
   margin: 20px auto;
 }
 
@@ -166,3 +167,4 @@ hr {
   align-items: center;
   flex-wrap: wrap;
 }
+
