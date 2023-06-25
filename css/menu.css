@@ -1,37 +1,10 @@
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    position: fixed;
-    z-index: 1;
-    align-items: center;
-    margin: 0 auto;
-}
-
-header { 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-header nav ul {
-    display: flex;
-}
-
-nav img {
-    width: 150px;
-    height: 90px;
-    margin-left: 58px;
-    margin-right: 20px;
-}
-
 nav li {
     margin: 0 40px;
     padding-top: 40px;
-}
-
-nav ul li a,
-#login {
+  }
+  
+  nav ul li a,
+  #login {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     font-weight: bold;
@@ -41,15 +14,50 @@ nav ul li a,
     height: 40px;
     margin-top: 30px;
     transition: background-color 0.4s;
-}
-
-nav ul li a:hover,
-#login:hover {
+  }
+  
+  nav ul li a:hover,
+  #login:hover {
     background-color: var(--hover-color);
     color: #87cefa;
-}
-
-#login {
+  }
+  
+  #login {
     border: none;
+  }
+
+
+  /* Estilos para o menu responsivo */
+#menu-list {
+  display: flex;
+  list-style: none;
 }
 
+#menu-list li {
+  margin-right: 20px;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 767px) {
+  #menu-list {
+    display: none;
+  }
+
+  #menu.active #menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
