@@ -1,0 +1,42 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E2E1DD;
+  color: #132540;
+}
+
+
+.carousel {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+  
+  .testimonial-card {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 600px) {
+    .testimonial-card {
+      padding: 10px;
+    }
+  
+    .testimonial-card img {
+      width: 50px;
+      height: 50px;
+    }
+  }
