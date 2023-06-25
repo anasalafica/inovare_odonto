@@ -1,0 +1,686 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Montserrat wght@300&" , sans-serif;
+}
+
+:root {
+  --cor-primaria: #365b6d;
+  --cor-secundaria: #99d9d9;
+  --cor-botao-menu: #41C1BA;
+  --brando-primario: #ffffff;
+  --branco-gelo: #f2f2f0;
+  --marron-claro: #c6c1bc;
+  --marron-primario: #a58272;
+}
+
+header {
+  background-color: transparent;
+}
+
+body {
+  background-image: url(/Assets/Fundo_de_pagina.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0px 15px;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  
+}
+
+#logoHeader{
+  margin-right: 15rem;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10rem;
+ 
+}
+
+.menu-list a, input[type=submit]{
+    width: clamp(10rem,10rem, 11rem);
+    height: 5.2rem;
+    background-color:#41C1BA;
+    color: #365b6d;
+    text-align: center;
+    border-radius: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    
+  }
+
+  input[type=submit]{
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    
+  }
+
+  input[type=checkbox]{
+    scale: 1.5;
+    
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .section-form{
+    display: flex;
+    flex-direction:column;
+   
+    width: 454px;
+    height: 684px;
+    margin: 0 auto;
+    padding: 2rem;
+
+  }
+
+  .imagem-body{
+    width: 100%;
+    height: 24rem;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+
+  form{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1.5rem;
+  }
+
+  .formulario{
+    background: #ffffff;
+  border: 1.035px solid #c4c4c4;
+  box-shadow: 0px 4.14px 4.14px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  }
+
+  .lembrar-senha{
+    height: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 20rem;
+    color: #365b6d;
+    font-weight: bolder;
+  }
+
+  span{
+    color: #365b6d;
+    font-weight: bolder;
+  }
+
+  .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+    padding: 5rem 1rem;
+    padding-top: 0;
+    
+
+  }
+
+  .cadastre-se{
+    align-self: center;
+  }
+
+
+
+  /* Efeitos de interação  */
+
+  .button a{
+  transition: all 0.5s;
+}
+
+.button a:hover {
+  background-color:#365b6d;
+  color:#41C1BA; 
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+#inputLogin{
+  transition: all 0.5s;
+}
+
+#inputLogin:hover {
+  background-color:#365b6d;
+  color:#41C1BA; 
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+p {
+  transition: all 0.5s;
+}
+
+p a:hover {
+  background-color: #41c1ba;
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+}
+
+input {
+  transition: 0.3s ease all;
+  
+}
+
+input:focus-visible {
+  outline-color: #38d2d2;
+}
+
+input:focus::placeholder {
+  transition: 0.3s ease all;
+  color: transparent;
+}
+
+.buttonPadrao {
+  transition: all 0.5s;
+}
+
+.buttonPadrao:hover {
+  background:#365b6d;
+  color:#41C1BA;
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.buttonPadrao2 {
+  transition: all 0.5s;
+}
+
+.buttonPadrao2:hover {
+  background:#365b6d;
+  color:#41C1BA;
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.buttonPadrao3 {
+  transition: all 0.5s;
+}
+
+.buttonPadrao3:hover {
+  background: #365b6d;
+  color:#41C1BA;
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.buttonPadrao4 {
+  transition: all 0.5s;
+}
+
+.buttonPadrao4:hover {
+  background:#41C1BA;
+  color: #365b6d;
+  transition: 0.3s ease all;
+  transform: scale(1, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Validações e mensagens de erro */
+
+  .form-content-email a{
+  position: relative;
+  bottom: 4px;
+  left: 3px;
+   visibility: hidden; 
+
+}
+
+.form-content-senha a{
+  position: relative;
+  bottom: 7px;
+  left: 3px;
+   visibility: hidden; 
+}
+
+
+.form-content.error input{
+  border-color: red;
+}
+
+.form-content.error a{
+  color: red;
+  visibility: visible;
+}
+
+.errorCadastrar{
+  border: 2px solid  red !important;
+  outline: none;
+}
+
+#span-cadastro-senha,#span-cadastro-email,#span-cadastro-telefone,#span-cadastro-nome{
+  color: red;
+  display:none ;
+  
+}
+
+
+
+
+/* Telas de POP-UP Modal   */
+
+
+
+
+
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.modal {
+  background: white;
+  border: 2px solid black;
+
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+
+  position: relative;
+  width: 500px; /*Padrão anterior 370px;    */
+  height: 600px; /*Padrão anterior 500pxpx;    */
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal img {
+  width: 170px;
+  height: 130px;
+}
+
+.modal p {
+  text-align: center;
+  padding-right: 0px;
+}
+
+.fontePopup {
+  color: #365b6d;
+  font-weight:bold;
+  font-size: 2rem !important;
+}
+
+.fontePopupDescricao {
+  color: #365b6d;
+  font-weight: bold;
+  font-family:'Montaga', serif;;
+  font-size: 1.4rem !important;
+}
+
+.fonteDescricao {
+  color: #f2f2f0;
+  font-weight:bold;
+  padding-left: 60px;
+  position: relative;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+  
+}
+
+.fonteDescricao2 {
+  color: #f2f2f0;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 100px;
+  position: relative;
+  bottom: 10rem;
+  left: 70px;
+}
+
+.inputVerificacao {
+  background: #ffffff;
+  border: 1.035px solid #c4c4c4;
+  box-shadow: 0px 4.14px 4.14px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+
+  width: 290px;
+  height: 28px;
+}
+
+
+
+.inputsNovaSenha {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+#avisoSenha {
+  position: relative;
+  bottom: 2.5px;
+  text-align: right;
+  font-size: x-small;
+}
+
+img.retanguloAgendamentos {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  left: 5px;
+  top: 28px;
+}
+
+.descricaoAgendamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  background-color: #365b6d;
+  font-size: x-small;
+  width: 360px;
+  height: 100px;
+  line-height: 15px;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.descricaoAgendamentoMarcado {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 0px;
+
+  background-color: #365b6d;
+  font-size: x-small;
+  width: 350px;
+  height: 250px;
+  line-height: 15px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+
+}
+
+.caixaDescricao{
+  position: relative;
+  bottom: 6rem;
+}
+
+.meusAgendamentos {
+  display: flex;
+  flex-direction: column;
+  text-align-last: auto;
+  gap: 0.6rem;
+}
+
+.logoAgendamento {
+  position: relative;
+  right: 90px;
+  bottom: 25px;
+}
+
+.logoAgendamento2 {
+  position: relative;
+  bottom: 50px;
+}
+
+img#imagemTelaDeAgendamento {
+  width: 160px;
+  height: 200px;
+}
+
+.BotoesAgendamentoMarcado {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  left: 17rem;
+  bottom: 14rem;
+}
+
+#logoTelaDeAgendamentos {
+  position: relative;
+  left: 20px;
+}
+
+.btn-fechar {
+  padding: 0.4rem;
+  border: black solid 1px;
+  position: relative;
+  bottom: 4rem;
+  left: 17rem;
+}
+
+.btn-fechar2 {
+  padding: 1.5px;
+  position: relative;
+  left: 10rem;
+  bottom: 40px;
+}
+
+.btn-fechar3 {
+  padding: 1.5px;
+  position: relative;
+  left: 10rem;
+  bottom: 13rem;
+}
+
+.logout {
+  position: relative;
+  left: 8rem;
+  bottom: 45px;
+  font-size: 15px;
+  color: #365b6d;
+  cursor: pointer;
+}
+
+.logoutAgendamento {
+  position: relative;
+  left: 8rem;
+  bottom: 8px;
+  font-size: 15px;
+  color: #365b6d;
+  cursor: pointer;
+}
+
+
+
+/* Alinhamento POP-UP */
+
+.alinhamentoCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.alinhamentoAgendamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.alinhamentoAgendamento02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.alinhamentoAgendamentoMarcado {
+  display: flex;
+  flex-direction: column;
+}
+
+
+ .buttonPadrao{
+  width: 16rem;
+  height: 5.2rem;
+  background-color:#41C1BA;
+  color: #365b6d;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+} 
+
+.buttonPadrao2{
+  width: 22rem;
+  height: 5.3rem;
+  background-color:#41C1BA;
+  color: #365b6d;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.buttonPadrao3{
+  width: 15rem;
+  height: 3rem;
+  background-color:#41C1BA;
+  color: #365b6d;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.buttonPadrao4{
+  width: 15rem;
+  height: 3rem;
+  background-color:lightgrey;
+  color:#38d2d2;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+  
+}
+
+#avisoSenha{
+  font-family: "Montserrat";
+  color: #365b6d;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+
+/*Telas POPUP para ocultar */
+
+.modal-hidden {
+  display: none;
+}
+
+.show-modal{
+  display:flex ;
+}
+
+/* #esqueceu-a-senha-modal {
+  display: none;
+}
+
+#cadastrar-login-modal {
+  display: none;
+}
+
+#Usuario-logado-modal {
+  display: none;
+}
+
+#verificacao-modal {
+  display: none;
+}
+
+#nova-senha-modal {
+  display: none;
+}
+
+#horarios-agendados-modal {
+  display: none;
+}
+
+#horario-agendado-selecionado {
+  display: none;
+} */
+
+
+
+
