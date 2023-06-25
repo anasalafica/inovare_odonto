@@ -16,8 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
 
     <!-- Initialize Swiper -->
-    <!-- <script src="/js/slideshow.js" defer></script>
-    <style>-->
+    <script src="/js/slideshow.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+    <style>
 
     </style>
     <title>Smile Odonto</title>
@@ -26,48 +27,22 @@
 <body>
 
     <header>
-        <nav id="menu"><a href="/servico.html"><img src="/assets/background/Logotipo_inovareodonto 3.svg" alt="Logo"></a>
-            <ul>
-                <li><a href="#servico">Serviços</a></li>
-                <li><a href="#">Agendar</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav id="menu">
+          <a href="home.html"><img src="/assets/background/Logotipo_inovareodonto 3.svg" alt="Logo"></a>
+          <ul id="menu-list">
+            <li><a href="servico.html">Serviços</a></li>
+            <li><a href="#">Agendar</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
             <button id="login">Login</button>
+          </ul>
+          <button id="menu-toggle">&#9776;</button>
         </nav>
-    </header>
-
-    <main class="main-container">
-        <section class="section-container">
-            <figure>
-                <img class="right" src="/assets/background/cliente.svg">
-            </figure>
-            <figure>
-                <img class="direita" src="/assets/background/Logotipo_inovareodonto 2.svg" alt="">
-            </figure>
-        </section>
-
-        <section><a name="home"></a>
-            <article>
-                <p class="text1">
-                    Um sorriso bonito, é o cartão de visita perfeito. <br>
-                    Cuide do seu com a nossa ajuda.
-                </p>
-            </article>
-            <div>
-                <button class="btn-agendar">Agendar</button>
-            </div>
-            <figure class="social-midia"><img src="/assets/background/instagram.svg" alt="">
-            <img src="/assets/background/facebook.svg" alt="">
-            <img src="/assets/background/yt.svg" alt="">
-            </figure>            
-        </section>
+      </header>
 
         <section><a name="servico"></a>
-            <figure class="Toothbrush">
-                <img src="/assets/background/escova-removebg-preview 1.svg" alt="">
-            </figure>
+            
             <article>
                 <p class="text2">
                     Somos Inquietos e Inovadores. <br>
@@ -78,7 +53,7 @@
 
 
         <section class="slide-box">
-            <div class="slideshow-container swiper mySwiper">
+            <div class="slideshow-container swiper mySwiper"> 
                 <div class="swiper-wrapper">
                     <div class="slide swiper-slide">
                         <div class="flip-card-inner">
@@ -86,8 +61,8 @@
                                 <h3>Clinica Geral</h3>
                                 <img src="/assets/imgCarossel/clinica geral_R.jpeg" alt="Serviço 1">
                             </div>
-                            <div class="flip-card-back">
-                                <p>Texto do back</p>
+                            <div class="flip-card-back" >
+                                <p>A Clínica Geral em Odontologia oferece uma variedade de cuidados odontológicos abrangentes para pacientes de todas as idades, abordando desde exames e diagnósticos até tratamentos e prevenção de problemas dentários comuns.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +73,7 @@
                                 <img src="/assets/imgCarossel/ortodontia_R.jpg" alt="Serviço 2">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>A Ortodontia é responsável por corrigir o alinhamento dos dentes e da mandíbula, promovendo um sorriso mais estético e uma função mastigatória adequada. Utilizando aparelhos ortodônticos, proporciona um melhor equilíbrio facial.</p>
                             </div>
                         </div>
                     </div>
@@ -109,7 +84,7 @@
                                 <img src="/assets/imgCarossel/Image_Periodontia_R.jpg" alt="Serviço 3">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>A Periodontia trata das doenças que afetam os tecidos de suporte dos dentes, como gengivas e osso alveolar. Por meio de tratamentos como limpeza profissional e cirurgias periodontais, busca-se prevenir.</p>
                             </div>
                         </div>
                     </div>
@@ -120,7 +95,7 @@
                                 <img src="/assets/imgCarossel/endodontia_R.jpg" alt="Serviço 4">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>A Endodontia é responsável pelo tratamento dos canais radiculares dos dentes. Com procedimentos como a realização de canal, busca-se preservar o dente natural e aliviar a dor causada por inflamações ou infecções na polpa dentária.</p>
                             </div>
                         </div>
                     </div>
@@ -131,7 +106,7 @@
                                 <img src="/assets/imgCarossel/estéticaR.jpg" alt="Serviço 5">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>A Estética em Odontologia abrange procedimentos que visam melhorar a aparência do sorriso. Por meio de tratamentos como clareamento dental e facetas de porcelana, busca-se obter dentes mais brancos e alinhados.</p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +117,7 @@
                                 <img src="/assets/imgCarossel/implante_R.jpg" alt="Serviço 6">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>O Implante é a solução para substituir dentes perdidos. Através da colocação de um implante dentário no osso da mandíbula ou maxila, é possível restaurar a função mastigatória e estética do sorriso de forma permanente.</p>
                             </div>
                         </div>
                     </div>
@@ -153,7 +128,7 @@
                                 <img class="img-size" src="/assets/imgCarossel/proteses_R.jpg" alt="Serviço 7">
                             </div>
                             <div class="flip-card-back">
-                                <p>Texto do back</p>
+                                <p>A Prótese é uma opção para substituir um ou mais dentes ausentes. Com a utilização de próteses dentárias removíveis ou fixas, busca-se restaurar a função mastigatória e a estética do sorriso, proporcionando maior conforto.</p>
                             </div>
                         </div>
                     </div>
