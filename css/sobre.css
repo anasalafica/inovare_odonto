@@ -1,117 +1,316 @@
-.main-sobre {
-
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'montserrat';
+  font-size: 16px;
 }
 
-.tx-sobre {
-    font-family: 'Montserrat';
-    font-style: normal;
-    margin: 1.875rem 5rem;
-    font-weight: 4.375rem;
-    font-size: 1rem;
-    line-height: 1.5625rem;
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav img {
+  width: 150px;
+  height: 90px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+    padding-top: 40px;
+  }
+  
+  nav ul li a,
+  #login {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: var(--font-size);
+    padding: 10px 35px;
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 30px;
+    transition: background-color 0.4s;
+    
+  }
+  
+  nav ul li a:hover,
+  #login:hover {
+    background-color: var(--hover-color);
+    color: #87cefa;
+  }
+  
+  #login {
+    border: none;
+  }
+
+
+  /* Estilos para o menu responsivo */
+#menu-list {
+  display: flex;
+  list-style: none;
+}
+
+#menu-list li {
+  margin-right: 20px;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 767px) {
+  #menu-list {
+    display: none;
+  }
+
+  #menu.active #menu-list {
+    display: flex;
     flex-direction: column;
-    display: flex;
     align-items: center;
-    text-align: center;
+  }
 
-    color: #365B6D;
-}
-
-.h1-sobre {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 4.375rem;
-    font-size: 2rem;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #365B6D;
-}
-
-.carrousel-sobre {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex: none;
-    flex-grow: 0;
-    margin: 0rem 0.5rem;
-}
-
-.buttom-left-sobre {
-    width: 4.375rem;
-    height: 4.375rem;
-}
-
-.slide-sobre {
-    width: 13.75rem;
-    height: 24.6875rem;
-    background-color: white;
-    border-radius: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: none;
-    flex-grow: 0;
-    margin: 1.25rem;
-    border: 0.1rem solid #365B6D;
-
-    font-family: 'Montserrat';
-    align-items: center;
-    text-align: center;
-    color: #365B6D;
-    font-style: normal;
-    font-weight: 37.5rem;
-}
-
-#dent1 {
+  #menu-toggle {
     display: block;
+  }
+nav {
+    padding: 10px;
+  }
+
+  nav img {
+    width: 120px;
+    height: 72px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  nav li {
+    margin: 0 20px;
+    padding-top: 20px;
+  }
+
+  nav ul li a,
+  #login {
+    padding: 5px 26.1px;
+    height: 30px;
+    margin-top: 20px;
+  }
 }
 
-#dent2 {
-    display: block;
+#sobre {
+  min-height: 100vh;
+  padding: 0 2.1875rem;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
 }
 
-#dent3 {
-    display: block;
+.p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  margin: 1.875rem 5rem;
+  font-weight: 4.375rem;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #365B6D;
 }
 
-#dent4 {
-    display: none;
+.tx {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
 }
 
-#dent5 {
-    display: none;
+h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 4.375rem;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #365B6D;
 }
 
-#dent6 {
-    display: none;
+.wrapper {
+  max-width: 68.75rem;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#dent7 {
-    display: none;
+.wrapper i {
+  top: 50%;
+  height: 3.125rem;
+  width: 3.125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 3.125rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
 
-.h3-sobre{
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.5625rem;
-    color: #365B6D;
-    padding: 0rem 1.25rem;
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
 }
 
-.img-sobre{
-    width: 10.4375rem;
-    height: 13.8125rem;
-    top: 2.1875rem;
-    left: 1rem;
-    border-radius: 5.25rem;
+.wrapper i:first-child{
+  left: -1.375rem;
 }
 
-.descricao-sobre {
-    font-size: 1rem;
-    display: none;
-    flex-direction: row;
+.wrapper i:last-child{
+  right: -1.375rem;
 }
 
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 0.75rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  margin-left: 5rem;
+  justify-content: center;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 25rem;
+  width: 15.625rem;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 0.9375rem;
+  flex-direction: column;
+  align-content: space-evenly;
+  border-radius: 1.25rem;
+  border: 0.15rem solid #365B6D;
+  color: #365b6d;
+}
+
+.card .img img {
+  width: 110.625rem;
+  height: 14.375rem;
+  border-radius: 5rem;
+  object-fit: cover;
+  border: 0.25rem solid #fff;
+  margin: 0.625rem;
+}
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 1.875rem 0 0.3125rem;
+}
+
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 0.5625rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+.face {
+  perspective: 43.75rem;
+  display: flex;
+
+}
+
+.front {
+  width: 11.875rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.back {
+  width: 10.625rem;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card:hover .front {
+  display: none;
+}
+
+ .card:hover .back {
+  display: flex;
+}
+
+.descricao {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}

@@ -1,79 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sobre.css">
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <title>Sobre</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');    
+    </style>
+    <script src="js/sobre.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+  </head>
+
+  <body>
     <header>
+        <nav id="menu">
+            <a href="/home.html"><img src="/assets/background/Logotipo_inovareodonto 3.svg" alt="Logo"></a>
+            <ul id="menu-list">
+                <li><a href="servico.html" style="text-decoration:none">Serviços</a></li>
+                <li><a href="#" style="text-decoration:none">Agendar</a></li>
+                <li><a href="sobre.html" style="text-decoration:none">Sobre</a></li>
+                <li><a href="blog/blog.html" style="text-decoration:none">Blog</a></li>
+                <li><a href="contato.html" style="text-decoration:none">Contato</a></li>
+                <button id="login">Login</button>
+            </ul>
+            <button id="menu-toggle">&#9776;</button>
+        </nav>
     </header>
-    <main class="main-sobre">
-        <div class="tx-sobre">
-        <p>Apaixonados e dedicados a oferecer o melhor serviço de odontologia para você e sua família. Contamos com uma equipe de dentistas qualificados e parceiros confiáveis, que oferecem os mais diversos tipos de procedimentos odontológicos, desde os mais simples até os mais complexos.</p>
-        <p>Nossa missão é facilitar o acesso à saúde bucal, proporcionando comodidade, segurança e qualidade em todas as etapas do seu tratamento. Queremos que você se sinta bem cuidade e satisfeito com o seu sorriso.</p>
-        <h1 class="h1-sobre">Conheça nossa equipe!</h1>
-        </div>
-        <section>
-            <article class="carrousel-sobre">
-                <img id="buttom-left-sobre" src="Imagens/buttom_left.svg" alt="seta-esquerda">
-                <div class="slide-sobre" id="dent1">
-                    <h3 class="h3-sobre">Dr. André</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/1 3x4.png" alt="Dr. André">
-                    <h3 class="h3-sobre">Especialista em Clínica Geral</h3>
-                    <p class="descricao-sobre">Formado pela Universidade Federal de São Paulo (UNIFESP), Dr. André Silva possui 10 anos de experiência como dentista clinico geral.</p>
-                    <p class="descricao-sobre">CRO-SP 12345</p>
+
+    <main>  
+        <section id="sobre">
+            <div class="p">
+            <p>Apaixonados e dedicados a oferecer o melhor serviço de odontologia para você e sua família. Contamos com uma equipe de dentistas qualificados e parceiros confiáveis, que oferecem os mais diversos tipos de procedimentos odontológicos, desde os mais simples até os mais complexos.</p>
+            <p>Nossa missão é facilitar o acesso à saúde bucal, proporcionando comodidade, segurança e qualidade em todas as etapas do seu tratamento. Queremos que você se sinta bem cuidade e satisfeito com o seu sorriso.</p>
+            <h1>Conheça nossa equipe!</h1>
+            </div>
+            <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dr. André</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/1 3x4.png" alt="Dr. André" draggable="false"></div>
+                    <span class="tx">Clínica Geral</span>
                 </div>
-                <div class="slide-sobre"  id="dent2">
-                    <h3 class="h3-sobre">Dra. Natália</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/4 3x4.png" alt="Dra. Natália">
-                    <h3 class="h3-sobre">Especialista em Edodontia</h3>
-                    <p class="descricao-sobre">Formada pela Universidade Federal de Minas Gerais (UFMG), Dra. Natalia Oliveira desenvolveu interesse pela Edodontia ainda nos seus anos de faculdade, já tendo acumulado 8 anos de experiência na área.</p>
-                    <p class="descricao-sobre">CRO-MG 67890</p>
+                <div class="back">
+                    <p class="descricao">Formado pela Universidade Federal de São Paulo (UNIFESP), Dr. André Silva possui 10 anos de experiência como dentista clinico geral.</p>
+                    <p class="descricao">CRO-SP 12345</p>
                 </div>
-                <div class="slide-sobre" id="dent3">
-                    <h3 class="h3-sobre">Dr. José Augusto</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/3 3x4.png" alt="Dr. José Augusto">
-                    <h3 class="h3-sobre">Especialista em Peridontia</h3>
-                    <p class="descricao-sobre">Formado pela Universidade de São Paulo, Dr. José Augusto Ferreira possui mais de 30 anos de experiência em Clínica Geral e Peridontia</p>
-                    <p class="descricao-sobre">CRO-SP 98765</p>
+                </section>
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dra. Natália</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/4 3x4.png" alt="Dra. Natália" draggable="false"></div>
+                    <span class="tx">Edodontia</span>
                 </div>
-                <div class="slide-sobre" id="dent4">
-                    <h3 class="h3-sobre">Dr. Matheus</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/6 3x4.png" alt="Dr. Matheus">
-                    <h3 class="h3-sobre">Especialista em Implantes</h3>
-                    <p class="descricao-sobre">Formado pela Universidade Federal do Rio de Janeiro (UFRJ), Dr. Matheus Fernandes se especializou em implantes pela USP, área em que já atua há mais de 15 anos</p>
-                    <p class="descricao-sobre">CRO-SP 87654</p>
+                <div class="back">
+                    <p class="descricao">Formada pela Universidade Federal de Minas Gerais (UFMG), Dra. Natalia Oliveira desenvolveu interesse pela Edodontia ainda nos seus anos de faculdade, já tendo acumulado 8 anos de experiência na área.</p>
+                    <p class="descricao">CRO-MG 67890</p>
                 </div>
-                <div class="slide-sobre" id="dent5">
-                    <h3 class="h3-sobre">Dra. Patrícia</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/8 3x4.png" alt="Dra. Patricia">
-                    <h3 class="h3-sobre">Especialista em Ortodontia</h3>
-                    <p class="descricao-sobre">Dra. Patricia Costa concluiu sua graduação e especialização na Universidade de Brasilia, tendo trabalhado durante quase toda sua carreira em clinicas especializadas em Ortodontia.</p>
-                    <p class="descricao-sobre">CRO-DF 54321</p>
-                </div>               
-                <div class="slide-sobre" id="dent6">
-                    <h3 class="h3-sobre">Dr. Ricardo</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/2 3x4.png" alt="Dr. Ricardo">
-                    <h3 class="h3-sobre">Especialista em Proteses</h3>
-                    </div>
-                    <p class="descricao-sobre">Dr. Ricardo Andrade se formou em Odontologia pela Universidade Estadual de São Paulo (UNESP) e já atua como clínico geral e criação de próteses dentárias a cerca de 20 anos.</p>
-                    <p class="descricao-sobre">CRO-SP 80756</p>
-                </div> 
-                <div class="slide-sobre" id="dent7">
-                    <h3 class="h3-sobre">Dr. Marcelo</h3>
-                    <img class="img-sobre" src="Imagens/modelos_dentistas/5 3x4.png" alt="Dr. Marcelo">
-                    <h3 class="h3-sobre">Especialista em Estética</h3>
-                    <p class="descricao-sobre">Dr. Marcelo Mendes se formou pela Universidade de São Paulo (USP) há 16 anos, período em que se especializou em estética e vem atuando desde então.</p>
-                    <p class="descricao-sobre">CRO-SP 96124</p>
+                </section>
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dr. José Augusto</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/3 3x4.png" alt="Dr. José Augusto" draggable="false"></div>
+                    <span class="tx">Clínica Geral</span>
+                    <span class="tx">Peridontia</span>
                 </div>
-                <img id="buttom-right-sobre" src="Imagens/buttom_right.svg" alt="seta-direita">
-            </article>    
+                <div class="back">
+                    <p class="descricao">Formado pela Universidade de São Paulo, Dr. José Augusto Ferreira possui mais de 30 anos de experiência em Clínica Geral e Peridontia</p>
+                    <p class="descricao">CRO-SP 98765</p>            
+                </div>
+                </section>
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dr. Matheus</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/6 3x4.png" alt="Dr. Matheus" draggable="false"></div>
+                    <span class="tx">Implantes</span>
+                </div>
+                <div class="back">
+                    <p class="descricao">Formado pela Universidade Federal do Rio de Janeiro (UFRJ), Dr. Matheus Fernandes se especializou em implantes pela USP, área em que já atua há mais de 15 anos</p>
+                    <p class="descricao">CRO-SP 87654</p>
+                </div>
+                </section>
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dra. Patricia</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/8 3x4.png" alt="Dra. Patricia" draggable="false"></div>
+                    <span class="tx">Ortodontia</span>
+                </div>
+                <div class="back">
+                    <p class="descricao">Dra. Patricia Costa concluiu sua graduação e especialização na Universidade de Brasilia, tendo trabalhado durante quase toda sua carreira em clinicas especializadas em Ortodontia.</p>
+                    <p class="descricao">CRO-DF 54321</p>          
+                </div>
+                </section>
+                <section class="card" class="face">
+                <div class="front">
+                    <h2 class="tx">Dr. Ricardo</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/2 3x4.png" alt="Dr. Ricardo" draggable="false"></div>
+                    <span class="tx">Próteses</span>
+                </div>          
+                <div class="back"> 
+                    <p class="descricao">Dr. Ricardo Andrade se formou em Odontologia pela Universidade Estadual de São Paulo (UNESP) e já atua como clínico geral e criação de próteses dentárias a cerca de 20 anos.</p>
+                    <p class="descricao">CRO-SP 80756</p>
+                </div>           
+                </section>
+                <section class="card">
+                <div class="front">
+                    <h2 class="tx">Dr. Marcelo</h2>
+                    <div class="img"><img src="Imagens/modelos_dentistas/5 3x4.png" alt="Dr. Marcelo" draggable="false"></div>
+                    <span class="tx">Estética</span>
+                </div>
+                <div class="back">
+                    <p class="descricao">Dr. Marcelo Mendes se formou pela Universidade de São Paulo (USP) há 16 anos, período em que se especializou em estética e vem atuando desde então.</p>
+                    <p class="descricao">CRO-SP 96124</p>
+                </div>
+                </section>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
         </section>
     </main>
+
     <footer>
+        <div class="container">
+            <div class="links">
+                <h5>Empresa</h5>
+                    <ul>
+                        <li><a>Serviços</a></li>
+                        <li><a>Sobre nós</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Política de Privacidade</a></li>
+                        <li><a>Termos de uso</a></li>
+                    </ul>
+            </div>
+            <div class="img-central">
+                <img src="Imagens/novologo_nomesite/Logotipo_inovareodonto.png" alt="Inovare Odonto Logo">
+            </div>
+            <div class="Siga-nos">
+                <div class="texto-siganos">
+                    <p>Siga-nos em nossas redes sociais</p>
+                </div>
+                <div class="medias-sociais">
+                    <img src="/Img/icon_instagram.png" alt="Instagran">
+                    <img src="/Img/icon_facebook.png" alt="facebook">
+                    <img src="/Img/icon_youtube.png" alt="Youtube">
+                </div>
+                <div class="inscrever-se">
+                    <h6>
+                        Inscreva-se
+                    </h6>
+                </div>
+                <div class="texto-form">
+                    <p>Para receber dicas exclusivas e novidades, não</p>
+                    <p>deixe de se inscrever em nossa nwesletter e</p>
+                    <p>fique por dentro de tudo</p>
+                </div>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                        <button>Inscreva-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="copywrigt">
+            <p>&copy; 2023 Inovare Odonto. Todos os Direitos Reservados.</p>
+        </div>
     </footer>
-</body>
+
+  </body>
 </html>
