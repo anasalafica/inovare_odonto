@@ -18,7 +18,7 @@ body {
 
 .tx-contato {
     font-family: 'Montserrat', sans-serif;
-    margin: 1.875rem 5rem;
+    margin: 1cm 5rem;
     font-weight: 4.375rem;
     font-size: 1rem;
     line-height: 1.5625rem;
@@ -32,8 +32,6 @@ body {
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
   }
-
-
 
 .tx-contato h3 {
     /*margin: 0;*/
@@ -92,6 +90,8 @@ body {
 .miolo {
     display: flex;
     flex-direction: row;
+    margin-bottom: 2rem;
+    justify-content: center;
   }
   
 .form-container {
@@ -185,7 +185,7 @@ body {
   height: 12.95rem;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/logotipo.jpg');
+  background-image: url('../Assets/Imagem_Contato/logotipo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,19 +212,20 @@ body {
   cursor: pointer;
    
 }
-
-.agenda {
+/*
+agenda. {
   display: flex;
   align-items: center;
   justify-content: center;
  
   }
-
+*/
 
 /* ================================================================= */
 /* FOOTER */
 /* ================================================================= */
 
+/*
 footer {
   background-color: #132540;
   color: white;
@@ -297,6 +298,8 @@ button {
   border-bottom: 1px solid white; /* Cor e estilo da linha */
 }
 
+*/
+
 .copywrigt {
   display: flex;
   justify-content: center;
@@ -305,7 +308,7 @@ button {
   font-size: 8px;
 }
 
-.agenda {
+/*.agenda {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,12 +317,15 @@ button {
   color:#365B6D;
   font-family: Montserrat;
   font-weight: 700;
-}
+}*/
 
+/*
 .tx-agenda
  {
   margin-right: 10rem;
 }
+*/
+
 .tx-clique,
 .button {
   margin-left: 5rem;
@@ -337,6 +343,7 @@ button {
 @media (max-width: 768px) {
   .miolo {
     flex-direction: column;
+    align-items: center;
   }
   
   .form-container {
@@ -387,4 +394,176 @@ button {
     padding: 0;
   }
 }
+
+.mensagem-erro {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.campo-invalido {
+  border-color: red;
+}
+
+/* Estilos para telas maiores */
+.agenda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px; /* Defina um valor máximo para evitar que a DIV fique muito larga */
+  margin: 0 auto; /* Centralizar a DIV horizontalmente */
+}
+
+.tx-agenda {
+  flex-grow: 1;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .agenda {
+    flex-direction: column; /* Altera o layout para empilhar os elementos verticalmente */
+  }
+
+  .tx-agenda,
+  .tx-clique,
+  .button {
+    margin-bottom: 10px; /* Adiciona um espaço entre os elementos */
+  }
+}
+
+.nav {
+  background-color: #F0EFEA;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+
+.menu-list li a {
+  width: clamp(10rem, 10rem, 11rem);
+  height: 5.2rem;
+  background-color: #41c1ba;
+  color: #365b6d;
+  text-align: center;
+  border-radius: 1.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 1420px) {
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-list li {
+    margin: 0.25rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-list li {
+    margin: 0.25rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .menu-list {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 510px) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle:checked ~ .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-list li a {
+    width: clamp(7rem, 7rem, 8rem);
+    height: 4rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
 
