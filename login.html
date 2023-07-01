@@ -8,10 +8,10 @@
       href="Assets/favicon_inovare_odonto/favicon.ico"
       type="image/x-icon"
     />
-    <script src="js/script-login.js" defer></script>
-    <script src="/js/cadastrar.js" defer></script>
-    <link rel="stylesheet" href="css\reset.css" />
-    <link rel="stylesheet" href="css/login-style.css" />
+    <script src="Login\script-login.js" defer></script>
+    <script src="Login\cadastrar.js" defer></script>
+    <link rel="stylesheet" href="Login\login-style.css" />
+    <link rel="stylesheet" href="Login\reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,7 @@
   <body>
     <header class="container">
       <div class="menu">
-          <img onclick="location.href='index.html' " src="Assets/logo_header.svg" alt="logo do header" id="logoHeader"/>
+          <img onclick="location.href='index.html' " src="/Assets/imagens-login/logo_header.svg" alt="logo do header" id="logoHeader"/>
         </a>
         <ul class="menu-list">
           <li class="button"><a href="servico.html">Serviços</a></li>
@@ -42,7 +42,7 @@
       <div class="section-form">
         <img
           class="imagem-body"
-          src="Assets/logo_Main.svg"
+          src="/Assets/imagens-login/logo_Main.svg"
           alt="Logo do corpo da pagina"
         />
         <form class="form" id="form" action="">
@@ -90,7 +90,7 @@
           <li>
             <a href="https://www.instagran.com"
               ><img
-                src="Assets/icon _instagram_.svg"
+                src="/Assets/icon _instagram_.svg"
                 alt="Logo_instagran"
                 height="40"
             /></a>
@@ -98,7 +98,7 @@
           <li>
             <a href="https://www.facebook.com"
               ><img
-                src="Assets/icon _facebook_.svg"
+                src="/Assets/imagens-login/icon _facebook_.svg"
                 alt="Logo_facebook"
                 height="40"
             /></a>
@@ -106,7 +106,7 @@
           <li>
             <a href="https://www.youtube.com"
               ><img
-                src="Assets/icon _youtube_.svg"
+                src="/Assets/imagens-login/icon _youtube_.svg"
                 alt="Logo_youtube"
                 height="40"
             /></a>
@@ -127,7 +127,7 @@
 
           <button class="btn-fechar" >⨉</button>
 
-          <img src="Assets/logo_header.svg" alt="logo_pequeno">
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
           <h2 class="fontePopup">Esqueceu a senha</h2>
 
           
@@ -153,7 +153,7 @@
   <div class="modal-container">
       <div class="modal" id="PopupOtp">
           <button  class="btn-fechar">⨉</button>
-          <img src="Assets/logo_header.svg" alt="logo_pequeno">
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
           <h2 class="fontePopup">Verificação Necessária</h2>
 
          
@@ -182,7 +182,7 @@
   <div class="modal-container">
       <div class="modal" id="Pop-up-nova-senha">
           <button class="btn-fechar">⨉</button>
-          <img src="Assets/logo_header.svg" alt="logo_pequeno">
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
           <h2 class="fontePopup">Criar Nova Senha</h2>
 
           
@@ -226,14 +226,18 @@
 
               <button class="btn-fechar">⨉</button>
 
-              <img src="Assets/logo_header.svg" alt="logo_pequeno">
+              <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
 
               <h2 class="fontePopup">Cadastre-se Aqui</h2>
 
           <form class="formularioCadastro" id="formulario-cadastrar">
               <label for="inputPopupNome">
                 <input type="text" class="inputVerificacao" placeholder="Nome" id="inputPopupNome">
-                <span id="span-cadastro-nome">preenchimento correto obrigatório</span>
+                <span id="span-cadastro-nome">preenchimento  obrigatório</span>
+              </label>
+              <label for="inputPopupSobreNome">
+                <input type="text" class="inputVerificacao" placeholder="Sobrenome" id="inputPopupSobrenome">
+                <span id="span-cadastro-sobrenome">preenchimento  obrigatório</span>
               </label>
               <label for="inputPopupTelefone">
                 <input type="tel" class="inputVerificacao" placeholder="Telefone" id="inputPopupTelefone">
@@ -273,7 +277,7 @@
 
           <p><a class="logout" id="click-logoutAgendamento"><strong>Logout</strong></a></p>
 
-          <img src="Assets/logo_header.svg" alt="logo_pequeno">
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
 
               <input type="button" class="buttonPadrao2" value="Agendar um Horário" id="agendarbutton">
               <input  type="button" class="buttonPadrao2" value="Meus Horários Agendados" id="agendamentosbutton">  
@@ -295,7 +299,7 @@
 
           <p><a class="logoutAgendamento" id="click-logout-agendamentos-marcados"><strong>Logout</strong></a></p>
 
-          <img class="logoAgendamento" src="Assets/logo_header.svg" alt="logo_pequeno" id="logoTelaDeAgendamentos">
+          <img class="logoAgendamento" src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno" id="logoTelaDeAgendamentos">
 
           <div class="meusAgendamentos">
 
@@ -337,13 +341,13 @@
 
           <p><a class="logoutAgendamento" id="click-logout-agendamento-selecionado"><strong>Logout</strong></a></p>
 
-          <img class="logoAgendamento2" src="Assets/logo_header.svg" alt="logo_pequeno">
+          <img class="logoAgendamento2" src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
 
           <div class="meusAgendamentoSelecionado">
 
               <div  class="descricaoAgendamentoMarcado" id="agendamentoMarcado01">
                   
-                  <img class="retanguloAgendamentos" src="Assets/agendar_consulta_01.svg" alt="retanguloDeAgendamentos" id="imagemTelaDeAgendamento">
+                  <img class="retanguloAgendamentos" src="/Assets/imagens-login/agendar_consulta_01.svg" alt="retanguloDeAgendamentos" id="imagemTelaDeAgendamento">
                       <div class="caixaDescricao">
                         <p   class="fonteDescricao2">Dra. Patricia</p>
                         <p class="fonteDescricao2">Especialista em Ortodontia</p>

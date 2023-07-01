@@ -296,7 +296,7 @@ input:focus::placeholder {
   outline: none;
 }
 
-#span-cadastro-senha,#span-cadastro-email,#span-cadastro-telefone,#span-cadastro-nome{
+#span-cadastro-senha,#span-cadastro-email,#span-cadastro-telefone,#span-cadastro-nome, #span-cadastro-sobrenome{
   color: red;
   display:none ;
   
@@ -501,7 +501,7 @@ img#imagemTelaDeAgendamento {
   padding: 0.4rem;
   border: black solid 1px;
   position: relative;
-  bottom: 4rem;
+  bottom: 2.5rem;
   left: 17rem;
 }
 
