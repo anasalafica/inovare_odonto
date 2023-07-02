@@ -146,6 +146,8 @@ const botaoSalvarSenha = document.querySelector("#salvar-senha");
 
 const BotaoCadastreSeAqui = document.querySelector("#cadastre-se-aqui");
 
+const botaoAgendarHorario = document.querySelector("#agendarbutton");
+
 const BotaoMeusHorariosAgendados = document.querySelector(
   "#agendamentosbutton"
 );
@@ -169,6 +171,7 @@ const clickLogoutAgendamentosMarcados = document.querySelector(
 const clickLogoutAgendamentoSelecionado = document.querySelector(
   "#click-logout-agendamento-selecionado"
 );
+
 
 //Funcao fechar pagina
 
@@ -241,6 +244,10 @@ function openModalConsultaSelecionada() {
   modalConsultaSelecionada.classList.add("show-modal");
 }
 
+// function abrirAgendamento() {
+  
+// }
+
 // //Função Clickar no Logout
 // //function clickLogout() {
 
@@ -288,6 +295,7 @@ clickLogoutAgendamentosMarcados.addEventListener("click", botaoFechar);
 
 clickLogoutAgendamentoSelecionado.addEventListener("click", botaoFechar);
 
+botaoAgendarHorario.addEventListener('click', )
 
 
 

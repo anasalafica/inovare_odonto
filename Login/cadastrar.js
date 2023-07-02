@@ -4,9 +4,6 @@
 const formularioCadastrarNome = document.getElementById("inputPopupNome");
 const mensagemErroNome = document.getElementById("span-cadastro-nome")
 
-
-
-
 function verificaCadastrarNome() {
   const regexNome = /^[a-zA-Z\s]+$/;
   if (regexNome.test(formularioCadastrarNome.value)) {
@@ -21,7 +18,32 @@ function verificaCadastrarNome() {
   }
 }
 
+//---------Input--Sobrenome-------
+
+const mensagemErroSobreNome = document.getElementById("span-cadastro-sobrenome");
+
+const formularioCadastrarSobrenome = document.getElementById("inputPopupSobrenome");
+
+
+
+function verificaCadastrarSobreNome() {
+  const regexNome = /^[a-zA-Z\s]+$/;
+  if (regexNome.test(formularioCadastrarSobrenome.value)) {
+    formularioCadastrarSobrenome.classList.remove("errorCadastrar");
+    mensagemErroSobreNome.style.display = "none"; // oculta o span de erro
+
+  } else {
+    formularioCadastrarSobrenome.classList.add("errorCadastrar");
+    mensagemErroSobreNome.style.display = "block";
+
+    
+  }
+}
+
+
 formularioCadastrarNome.addEventListener("blur", verificaCadastrarNome);
+
+formularioCadastrarSobrenome.addEventListener("blur", verificaCadastrarSobreNome);
 
 ///////////////////////////////////////////
 
