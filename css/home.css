@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  height: 100vh;
   background-color: #F0EFEA;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +19,12 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
   position: relative;
+}
+
+
+main {
+ 
+flex: 1;
 }
 
 .main-container {
