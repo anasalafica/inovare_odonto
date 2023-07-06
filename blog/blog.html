@@ -1,32 +1,380 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog - Hábitos que prejudicam a saúde bucal</title>
-    <link rel="stylesheet" href="estilos/style.css" media="screen">
-    <link rel="stylesheet" href="estilos/impressao.css" media="print">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-      <article>
-        <header class="title">
-          <h1>Acesse Nosso Blog ...</h1>
-        </header>
-        <section class="image-principal-blog">
-          <figure class="image-principal">
-            <img src="imagens/moca-pensando.svg" alt="moca pensando">
-          </figure>
-         <section class="subtitle-blog">
-           <h2>... e fique por dentro de novidades e curiosidades do mundo da
-            Odontologia.</h2>
-         </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
+        <title>Blog</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/Imagens/novologo_nomesite/favicon.ico"
+            type="image/x-icon">
+        <link rel="stylesheet" href="/blog/css/style.css">
+        <link rel="stylesheet" href="/contato/contato.css">
+        <link rel="stylesheet" href="/sobre/sobre.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <section id="sobre">
+            <div class="p">
+                <p>Apaixonados e dedicados a oferecer o melhor serviço de
+                    odontologia para você e sua família. Contamos com uma equipe
+                    de dentistas qualificados e parceiros confiáveis, que
+                    oferecem os mais diversos tipos de procedimentos
+                    odontológicos, desde os mais simples até os mais complexos.</p>
+                <p>Nossa missão é facilitar o acesso à saúde bucal,
+                    proporcionando comodidade, segurança e qualidade em todas as
+                    etapas do seu tratamento. Queremos que você se sinta bem
+                    cuidade e satisfeito com o seu sorriso.</p>
+                <h1>Conheça nossa equipe!</h1>
+            </div>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dr. André</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/1 3x4.png"
+                                    alt="Dr. André" draggable="false"></div>
+                            <span class="tx">Clínica Geral</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Formado pela Universidade
+                                Federal de São Paulo (UNIFESP), Dr. André Silva
+                                possui 10 anos de experiência como dentista
+                                clinico geral.</p>
+                            <p class="descricao">CRO-SP 12345</p>
+                        </div>
+                    </section>
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dra. Natália</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/4 3x4.png"
+                                    alt="Dra. Natália" draggable="false"></div>
+                            <span class="tx">Edodontia</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Formada pela Universidade
+                                Federal de Minas Gerais (UFMG), Dra. Natalia
+                                Oliveira desenvolveu interesse pela Edodontia
+                                ainda nos seus anos de faculdade, já tendo
+                                acumulado 8 anos de experiência na área.</p>
+                            <p class="descricao">CRO-MG 67890</p>
+                        </div>
+                    </section>
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dr. José Augusto</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/3 3x4.png"
+                                    alt="Dr. José Augusto" draggable="false"></div>
+                            <span class="tx">Clínica Geral</span>
+                            <span class="tx">Peridontia</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Formado pela Universidade de
+                                São Paulo, Dr. José Augusto Ferreira possui mais
+                                de 30 anos de experiência em Clínica Geral e
+                                Peridontia</p>
+                            <p class="descricao">CRO-SP 98765</p>
+                        </div>
+                    </section>
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dr. Matheus</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/6 3x4.png"
+                                    alt="Dr. Matheus" draggable="false"></div>
+                            <span class="tx">Implantes</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Formado pela Universidade
+                                Federal do Rio de Janeiro (UFRJ), Dr. Matheus
+                                Fernandes se especializou em implantes pela USP,
+                                área em que já atua há mais de 15 anos</p>
+                            <p class="descricao">CRO-SP 87654</p>
+                        </div>
+                    </section>
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dra. Patricia</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/8 3x4.png"
+                                    alt="Dra. Patricia" draggable="false"></div>
+                            <span class="tx">Ortodontia</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Dra. Patricia Costa concluiu
+                                sua graduação e especialização na Universidade
+                                de Brasilia, tendo trabalhado durante quase toda
+                                sua carreira em clinicas especializadas em
+                                Ortodontia.</p>
+                            <p class="descricao">CRO-DF 54321</p>
+                        </div>
+                    </section>
+                    <section class="card" class="face">
+                        <div class="front">
+                            <h2 class="tx">Dr. Ricardo</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/2 3x4.png"
+                                    alt="Dr. Ricardo" draggable="false"></div>
+                            <span class="tx">Próteses</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Dr. Ricardo Andrade se formou
+                                em Odontologia pela Universidade Estadual de São
+                                Paulo (UNESP) e já atua como clínico geral e
+                                criação de próteses dentárias a cerca de 20
+                                anos.</p>
+                            <p class="descricao">CRO-SP 80756</p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="front">
+                            <h2 class="tx">Dr. Marcelo</h2>
+                            <div class="img"><img
+                                    src="/assets/modelos_dentistas/5 3x4.png"
+                                    alt="Dr. Marcelo" draggable="false"></div>
+                            <span class="tx">Estética</span>
+                        </div>
+                        <div class="back">
+                            <p class="descricao">Dr. Marcelo Mendes se formou
+                                pela Universidade de São Paulo (USP) há 16 anos,
+                                período em que se especializou em estética e vem
+                                atuando desde então.</p>
+                            <p class="descricao">CRO-SP 96124</p>
+                        </div>
+                    </section>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
         </section>
-      </article>
-    </main>
-  </body>
+
+        <h1 class="section-titulo">Conheça nosso Blog</h1>
+
+        <br>
+        <hr>
+        <br>
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                <div class="slide-box primeiro">
+                    <a href="/blog/materia_01/materia-01.html" target="_blank"><img
+                            class="img-desktop"
+                            src="/blog/materia_01/image/carrossel_materia01_desk.png"
+                            alt="materia_01"></a>
+                    <a href="/blog/materia_01/materia-01.html" target="_blank"><img
+                            class="img-mobile"
+                            src="/blog/materia_01/image/carrossel_materia01_mobile.png"
+                            alt="materia_01"></a>
+                </div>
+
+                <div class="slide-box">
+                    <a href="/blog/materia_02/materia-02.html" target="_blank"><img
+                            class="img-desktop"
+                            src="/blog/materia_02/image/carrossel_materia02_desk.png"
+                            alt="materia_02"></a>
+                    <a href="/blog/materia_02/materia-02.html" target="_blank"><img
+                            class="img-mobile"
+                            src="/blog/materia_02/image/carrossel_materia02_mobile.png"
+                            alt="materia_02"></a>
+                </div>
+
+                <div class="slide-box">
+                    <a href="/blog/materia_03/materia-03.html" target="_blank"><img
+                            class="img-desktop"
+                            src="/blog/materia_03/image/carrossel_materia03_desk.png"
+                            alt="materia_03"></a>
+                    <a href="/blog/materia_03/materia-03.html" target="_blank"><img
+                            class="img-mobile"
+                            src="/blog/materia_03/image/carrossel_materia03_mobile.png"
+                            alt="materia_03"></a>
+                </div>
+
+                <div class="slide-box">
+                    <a href="/blog/materia_04/materia-04.html" target="_blank"><img
+                            class="img-desktop"
+                            src="/blog/materia_04/image/carrossel_materia04_desk.png"
+                            alt="materia_04"></a>
+                    <a href="/blog/materia_04/materia-04.html" target="_blank"><img
+                            class="img-mobile"
+                            src="/blog/materia_04/image/carrossel_materia04_mobile.png"
+                            alt="materia_04"></a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <hr>
+
+        <section class="mais-noticias">
+
+            <h2 class="section-titulo">Feito com muito carinho pra você. </h2>
+            <br>
+
+            <div class="mais-noticias-c">
+
+                <div class="noticia">
+                    <img src="/blog/materia_05/image/fio_dental_card.png"
+                        alt="rapaz usando fio dental" class="noticia__img">
+                    <h3 class="noticia__titulo">A Importância de saber usar o
+                        Fio Dental</h3>
+                    <p class="noticia__descricao">
+                        Você sabia que o fio dental é um dos itens mais
+                        importantes para a saúde bucal? Muitas pessoas ignoram
+                        ou esquecem de usar o fio dental diariamente, mas isso
+                        pode trazer sérios problemas para os dentes e as
+                        gengivas. Neste post, vamos explicar por que <a
+                            class="saiba-mais-noticia"
+                            href="/blog/materia_05/materia-05.html"
+                            target="_blank">Continuar Lendo...</a>
+                    </p>
+                </div>
+
+                <div class="noticia">
+                    <img src="/blog/materia_06/image/odontologia_digital.png"
+                        alt="dentista olhando tela com dentes em 3d"
+                        class="noticia__img">
+                    <h3 class="noticia__titulo">Inovações Tecnológicas na
+                        Odontologia 4.0</h3>
+                    <p class="noticia__descricao">
+                        A tecnologia na área de odontologia é um tema muito
+                        relevante e atual, pois envolve diversos avanços e
+                        inovações que podem melhorar a qualidade dos
+                        tratamentos, a experiência dos pacientes e a gestão dos
+                        consultórios <a class="saiba-mais-noticia"
+                            href="/blog/materia_06/materia-06.html"
+                            target="_blank">Continuar Lendo...</a>
+                    </p>
+                </div>
+
+                <div class="noticia">
+                    <img src="/blog/materia_07/image/estetica_oral.jpg"
+                        alt="Paleta de cores estetica dentaria"
+                        class="noticia__img">
+                    <h3 class="noticia__titulo">Tendências da Estética
+                        Odontológica para o seu Sorriso</h3>
+                    <p class="noticia__descricao">
+                        Você sabia que o sorriso é o cartão de visita de
+                        qualquer pessoa? Pois é, por isso que muita gente
+                        investe em tratamentos dentários para melhorar a
+                        aparência dos dentes e da boca. Mas quais são as
+                        novidades nessa área? Vamos conferir!...
+                        <a class="saiba-mais-noticia"
+                            href="/blog/materia_07/materia-07.html"
+                            target="_blank">Continuar Lendo...</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="tx-contato">
+            <header>
+                <h1>CONTATO</h1>
+                <div>
+                    <p>Se você tem alguma dúvida, sugestão ou</p>
+                    <p>reclamação, entre em contato conosco:</p>
+                </div>
+            </header>
+        </div>
+        <main>
+            <div class="miolo">
+                <div class="dados">
+                    <p class="telefone">
+                        <img class="icon"
+                            src="/Assets/Imagem_Contato/icon_phone.svg"
+                            alt="Icone do Telefone" width="50px" height="50px">
+                        <a>+55 (11) 3344-9876</a>
+                    </p>
+                    <p class="whatsapp">
+                        <img class="icon"
+                            src="/Assets/Imagem_Contato/icon_whatsapp.svg"
+                            alt="Icone Whatsapp" width="50px" height="50px">
+                        <a>(11) 99898-1221</a>
+                    </p>
+                    <p class="mail">
+                        <img class="icon"
+                            src="/Assets/Imagem_Contato/icon_mail.svg"
+                            alt="Icone Mail" width="50px" height="50px">
+                        <a>contato@inovareodonto.com</a>
+                    </p>
+                    <p class="local">
+                        <img class="icon"
+                            src="/Assets/Imagem_Contato/icon_pin_alt.svg"
+                            alt="Icone Local" width="50px" height="50px">
+                        <a>
+                            <span class="linha1">Estr. do Campo Limpo, 3404 -
+                                Vila Prel</span>
+                            <span class="linha2">São Paulo - SP, 05777-000</span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="form-container">
+                    <form id="contact-form" method="POST">
+                        <input type="text" placeholder="Nome" id="nome"
+                            name="nome" required>
+                        <div id="nome-erro" class="mensagem-erro"></div>
+                        <br>
+                        <input type="email" placeholder="E-mail" id="email"
+                            name="email" required>
+                        <div id="email-erro" class="mensagem-erro"></div>
+                        <br>
+                        <input type="tel" placeholder="Telefone" id="telefone"
+                            name="telefone">
+                        <div id="telefone-erro" class="mensagem-erro"></div>
+                        <br>
+                        <textarea id="mensagem" placeholder="Mensagem"
+                            name="mensagem" rows="5" cols="30" required></textarea>
+                        <div id="mensagem-erro" class="mensagem-erro"></div>
+                        <br>
+                        <input class="buttonPadrao" type="submit"
+                            value="Enviar Mensagem">
+                    </form>
+                </div>
+                <div class="popup-overlay" id="popup">
+                    <div class="popup-content">
+                        <h2><p>Prezado(a) cliente,</p>
+                            <p>Agradecemos o seu contato e o seu interesse.
+                                Ficamos felizes em saber que você está cuidando
+                                da sua saúde bucal e que confia em nosso
+                                trabalho.</p>
+                            <p>Em breve, entraremos em contato com você para
+                                tirar todas as suas dúvidas. Enquanto isso, você
+                                pode acessar o nosso site e conhecer mais sobre
+                                os nossos tratamentos, dicas e promoções.</p>
+                            <p>Esperamos atendê-lo(a) em breve e oferecer o
+                                melhor sorriso para você.</p>
+                            <p>Atenciosamente,</p>
+                            <p>Equipe Inovare Odonto.</p></h2>
+                        <button onclick="fecharPopup()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <script src="/contato/contato.js"></script>
+        <script src="/blog/js/script.js"></script>
+        <script src="/sobre/sobre.js" defer></script>
+
+    </body>
 </html>
