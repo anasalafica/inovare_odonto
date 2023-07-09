@@ -5,7 +5,7 @@ body {
   font-family: 'Dancing Script', cursive;
   font-family: 'Montserrat', sans-serif;
   background-color: #E2E1DD;
-  color: #132540;
+  color: #365B6D;
 }
 
 
@@ -114,6 +114,7 @@ hr {
 }
 
 .section-titulo {
+  justify-content: center;
 	text-align: center;
 	font-size: 3rem;
 	margin-bottom: 10px;
