@@ -5,13 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex">
         <title>Blog</title>
-        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="shortcut icon" href="/Imagens/novologo_nomesite/favicon.ico"
         type="image/x-icon">
-        <link rel="stylesheet" href="/blog/css/voltar-topo.css">    
+
+        <link rel="stylesheet" href="/blog/css/cookies.css">
+        <link rel="stylesheet" href="/blog/css/voltar-topo.css">
         <link rel="stylesheet" href="/blog/css/style.css">
         <link rel="stylesheet" href="/contato/contato.css">
         <link rel="stylesheet" href="/sobre/sobre.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;500;600;700&display=swap"rel="stylesheet">
@@ -369,11 +374,33 @@
                 </div>
             </div>
 
-            <div id="btn-top">
-                <i class="arrow up"></i>
-            </div>
-
         </main>
+
+        <!-- ************* BOTAO DE ROLAGEM AUTOMATICA PARA TOPO DA PAGINA******** -->
+
+        <div id="btn-top">
+            <i class="arrow up"></i>
+        </div>
+
+        <!-- ****************************FIM*********** -->
+
+        <!-- ********************** MESSAGEM COOKIES ************************ -->
+
+        <section class="cookies-c">
+            <div class="cookies-msg" id="cookies-msg">
+                <div class="cookies-txt">
+                    <p>Este site utiliza cookies para otimizar e aprimorar a sua navegação. Para mais detalhes acesse a nossa <a href="#">Política de Privacidade.</a></p>
+                </div>
+        
+                <div class="cookies-btn">
+                    <button onclick="aceito()">Aceito</button>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- *****************************FIM*************************************** -->
+        <script src="/blog/js/cookies.js"></script>
         <script src="/blog/js/voltar-topo.js"></script>
         <script src="/contato/contato.js"></script>
         <script src="/blog/js/script.js"></script>
