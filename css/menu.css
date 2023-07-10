@@ -1,5 +1,10 @@
+/*nav{
+  background:   #132540;
+  width: 100%;
+}*/
+
 nav li {
-    margin: 0 40px;
+     margin: 0 40px;
     padding-top: 40px;
     font-family: 'Montserrat';
   }
