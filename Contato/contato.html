@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!-- <header class="nav">
+        <div class="menu">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">
+            <img class="img-logoheader" src="/Img/logo_header.png" alt="logo do header" id="logoHeader">
+          </label>
+          <ul class="menu-list">
+            <li class="button"><a href="servico.html">Serviços</a></li>
+            <li class="button"><a href="agendamento.html">Agendar</a></li>
+            <li class="button"><a href="sobre.html">Sobre Nós</a></li>
+            <li class="button"><a href="blog.html">Blog</a></li>
+            <li class="button"><a href="contato.html">Contato</a></li>
+            <li class="button"><a href="">Login</a></li>
+          </ul>
+        </div>
+      </header>     -->
+    <div class="tx-contato">
+        <header>
+            <h1>CONTATO</h1>
+            <div>
+                <p>Se você tem alguma dúvida, sugestão ou</p> 
+                <p>reclamação, entre em contato conosco:</p>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="miolo">
+            <div class="dados">
+                <p class="telefone">
+                    <img class="icon" src="/Assets/Imagem_Contato/icon_phone.svg" alt="Icone do Telefone" width="50px" height="50px">
+                    <a>+55 (11) 3344-9876</a>
+                </p>
+                <p class="whatsapp">
+                    <img class="icon" src="/Assets/Imagem_Contato/icon_whatsapp.svg" alt="Icone Whatsapp" width="50px" height="50px">
+                    <a>(11) 99898-1221</a>
+                </p>
+                <p class="mail">
+                    <img class="icon" src="/Assets/Imagem_Contato/icon_mail.svg" alt="Icone Mail" width="50px" height="50px">
+                    <a>contato@inovareodonto.com</a>
+                </p>
+                <p class="local">
+                    <img class="icon" src="/Assets/Imagem_Contato/icon_pin_alt.svg" alt="Icone Local" width="50px" height="50px">
+                    <a>
+                        <span class="linha1">Estr. do Campo Limpo, 3404 - Vila Prel</span>
+                        <span class="linha2">São Paulo - SP, 05777-000</span>
+                    </a>
+                </p>
+            </div>
+        
+          <!--  <div class="form-container">
+                <form id="contact-form" method="POST">
+                    <input type="text" placeholder="Nome" id="nome" name="nome" required>
+                    <br>
+                    <input type="email" placeholder="E-mail" id="email" name="email" required>
+                    <br>
+                    <input type="tel" placeholder="Telefone" id="telefone" name="telefone">
+                    <br>
+                    <textarea id="mensagem" placeholder="Mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+                    <br>
+                    <input class="buttonPadrao" type="submit" value="Enviar Mensagem">
+                </form>
+            </div> -->
+            <div class="form-container">
+                <form id="contact-form" method="POST">
+                  <input type="text" placeholder="Nome" id="nome" name="nome" required>
+                  <div id="nome-erro" class="mensagem-erro"></div>
+                  <br>
+                  <input type="email" placeholder="E-mail" id="email" name="email" required>
+                  <div id="email-erro" class="mensagem-erro"></div>
+                  <br>
+                  <input type="tel" placeholder="Telefone" id="telefone" name="telefone">
+                  <div id="telefone-erro" class="mensagem-erro"></div>
+                  <br>
+                  <textarea id="mensagem" placeholder="Mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+                  <div id="mensagem-erro" class="mensagem-erro"></div>
+                  <br>
+                  <input class="buttonPadrao" type="submit" value="Enviar Mensagem">
+                </form>
+              </div>
+            <div class="popup-overlay" id="popup">
+                <div class="popup-content">
+                    <h2><p>Prezado(a) cliente,</p> 
+                        <p>Agradecemos o seu contato e o seu interesse. Ficamos felizes em saber que você está cuidando da sua saúde bucal e que confia em nosso trabalho.</p> 
+                        <p>Em breve, entraremos em contato com você para tirar todas as suas dúvidas. Enquanto isso, você pode acessar o nosso site e conhecer mais sobre os nossos tratamentos, dicas e promoções.</p> 
+                        <p>Esperamos atendê-lo(a) em breve e oferecer o melhor sorriso para você.</p> 
+                        <p>Atenciosamente,</p> 
+                        <p>Equipe Inovare Odonto.</p></h2>
+                    <button onclick="fecharPopup()">Fechar</button>
+                </div>
+            </div>
+        </div>
+        <!-- <footer>
+            <div class="containter-footer">
+                <div class="row-footer">
+                    <!-- Footer Coluna-->
+                    <!-- <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href=""> Serviços</a></li>
+                            <li><a href=""> Sobre Nós</a></li>
+                            <li><a href=""> Blog</a></li>
+                            <li><a href=""> Política de Privacidade</a></li>
+                            <li><a href=""> Termos de uso</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- End Footer Coluna-->
+                    <!-- Footer Coluna-->
+                    <!-- <div class="footer-col">
+                        <img class="img-central" src="/Img/logo.png" alt="Inovare Odonto Logo">
+                    </div>
+                    <!-- End Footer Coluna-->
+                    <!-- Footer Coluna-->
+                    <!-- <div class="footer-col"> -->
+                        <!-- <div>
+                            <h6>Siga-nos em nossas redes sociais</h6>
+                        </div>
+                        <div class="medias-sociais">
+                            <a href=""><i class="fa fa-instagran"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-youtube"></i></a>
+                        </div> -->
+                        <!-- <div> -->
+                            <!-- <h5>Inscreva-se</h5> -->
+                        <!-- </div> -->
+                        <!-- <div>                     -->
+                            <!-- <p>Para receber dicas exclusivas e novidades, não deixe de se inscrever em nossa nwesletter e fique por dentro de tudo.</p> -->
+                        <!-- </div> -->
+                        <!-- FORM Sub-->
+                        <!-- <div class="form-sub"> -->
+                            <!-- <form> -->
+                                <!-- <input type="email" placeholder="Digite seu e-mail" required> -->
+                                <!-- <button>Inscreva-se</button> -->
+                            <!-- </form> -->
+                        <!-- </div> -->
+                        <!-- END FORM Sub-->
+                    <!-- </div> -->
+                    <!-- End Footer Coluna-->                    
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="copywrigt"> -->
+                <!-- <p>&copy; 2023 Inovare Odonto. Todos os Direitos Reservados.</p> -->
+            <!-- </div> --> 
+        <!-- </footer> --> 
+    </main>
+    <script src="contato.js"></script>
+</body>
+</html>

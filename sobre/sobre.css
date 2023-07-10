@@ -1,0 +1,200 @@
+#sobre {
+  min-height: 100vh;
+  padding: 0 2.1875rem;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  margin: 1.875rem 5rem;
+  font-weight: 4.375rem;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #365B6D;
+}
+
+.tx {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 4.375rem;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #365B6D;
+}
+
+.wrapper {
+  max-width: 68.75rem;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 3.125rem;
+  width: 3.125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 3.125rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+  left: -1.375rem;
+}
+
+.wrapper i:last-child{
+  right: -1.375rem;
+}
+
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 0.75rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  margin-left: 5rem;
+  justify-content: center;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 25rem;
+  width: 15.625rem;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 0.9375rem;
+  flex-direction: column;
+  align-content: space-evenly;
+  border-radius: 1.25rem;
+  border: 0.15rem solid #365B6D;
+  color: #365b6d;
+}
+
+.card .img img {
+  width: 110.625rem;
+  height: 14.375rem;
+  border-radius: 5rem;
+  object-fit: cover;
+  border: 0.25rem solid #fff;
+  margin: 0.625rem;
+}
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 1.875rem 0 0.3125rem;
+}
+
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 0.5625rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+.face {
+  perspective: 43.75rem;
+  display: flex;
+
+}
+
+.front {
+  width: 11.875rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.back {
+  width: 10.625rem;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card:hover .front {
+  display: none;
+}
+
+ .card:hover .back {
+  display: flex;
+}
+
+.descricao {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}

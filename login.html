@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Assets/favicon_inovare_odonto/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="Login\script-login.js" defer></script>
+    <script src="Login\cadastrar.js" defer></script>
+    <link rel="stylesheet" href="Login\login-style.css" />
+    <link rel="stylesheet" href="Login\reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&       display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- <header class="container">
+      <div class="menu">
+          <img onclick="location.href='index.html' " src="/Assets/imagens-login/logo_header.svg" alt="logo do header" id="logoHeader"/>
+        </a>
+        <ul class="menu-list">
+          <li class="button"><a href="servico.html">Serviços</a></li>
+          <li class="button"><a href="agendamento.html">Agendar</a></li>
+          <li class="button"><a href="sobre.html">Sobre Nós</a></li>
+          <li class="button"><a href="blog.html">Blog</a></li>
+          <li class="button"><a href="contato.html">Contato</a></li>
+          <li class="button"><a href="">Login</a></li>
+        </ul>
+      </div>
+    </header> -->
+    <main class="container">
+      <div class="section-form">
+        <img
+          class="imagem-body"
+          src="/Assets/imagens-login/logo_Main.svg"
+          alt="Logo do corpo da pagina"
+        />
+        <form class="form" id="form" action="">
+          <div class="form-content-email">
+            <input
+            class="formulario"
+            name="email-tela-principal"
+            type="email"
+            placeholder="E-mail"
+            id="email-usuario"
+          />
+            <a id="mensagem-de-erro-email-login">aqui   vai a mensagem de erro</a>
+          </div>
+          
+          <div class="form-content-senha">
+            <input
+            class="formulario"
+            name="senha-tela-principal"
+            type="password"
+            placeholder="Senha"
+            name=""
+            id="senha-usuario"
+          />
+          <a id="mensagem-de-erro-senha-login">aqui vai a mensagem de erro da senha</a></div>
+          
+          <div class="lembrar-senha">
+            <label for="lembrar"><input type="checkbox" name="lembrar-senha" id="lembrar" />&nbsp
+              Lembrar
+              </label
+            ><div class="popupLembrarSenha">
+                <p><a class="pointer" id="esqueceuSenha">Esqueceu a sua senha?</a></p>
+              </div>    
+          </div>
+          <input type="submit" value="Login" id="inputLogin"/>
+          <p class="cadastre-se">
+            Ainda não tem cadastro?
+            <a class="pointer" id="cadastre-se-aqui"><span>Cadastre-se Aqui</span></a> 
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="container">
+      <nav >
+        <ul class="redes-sociais">
+          <li>
+            <a href="https://www.instagran.com"
+              ><img
+                src="/Assets/icon _instagram_.svg"
+                alt="Logo_instagran"
+                height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com"
+              ><img
+                src="/Assets/imagens-login/icon _facebook_.svg"
+                alt="Logo_facebook"
+                height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com"
+              ><img
+                src="/Assets/imagens-login/icon _youtube_.svg"
+                alt="Logo_youtube"
+                height="40"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+
+
+    <!---------Telas de POP-UP Modal   --------------->
+
+ <!--Tela Popup para redefinir senha esquecida-->
+ <div class="modal-hidden" id="esqueceu-a-senha-modal">
+  <div class="modal-container">
+      <div class="modal" id="modal-container">
+
+          <button class="btn-fechar" >⨉</button>
+
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+          <h2 class="fontePopup">Esqueceu a senha</h2>
+
+          
+      
+          <p class="fontePopupDescricao">Digite o email associado a sua conta<br> na inovare Odonto</p>
+      
+          <input type="text" class="inputVerificacao" placeholder="E-mail" id="inputPopup">
+      
+          <form>
+
+          <div class="buttonPopup">
+
+              <input  type="button" class="buttonPadrao" value="Proseguir" id="proseguir">
+
+          </div>
+      </div>      
+  </div>    
+</div>
+
+      <!--Tela Popup de verificacao OTP-->
+
+<div  class="modal-hidden" id="verificacao-modal">
+  <div class="modal-container">
+      <div class="modal" id="PopupOtp">
+          <button  class="btn-fechar">⨉</button>
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+          <h2 class="fontePopup">Verificação Necessária</h2>
+
+         
+      
+          <p class="fontePopupDescricao">Para continuar, conclua esta etapa de verificação.<br> Enviamos um código para seu e-mail contendo 04 digitos.<br>É só digitar abaixo e verificar.</p>
+      
+          <input type = "text"  name="verificar_usuario" class="inputVerificacao" placeholder="****">
+      
+      
+          <div class="buttonPopup">
+              <form>
+              <input  type="button" class="buttonPadrao" value="Verificar" id="verificar">
+              </form>
+          </div>  
+        </div>
+    </div>      
+  </div> 
+
+
+
+
+
+<!--Tela Popup Criar Nova Senha-->
+
+<div class="modal-hidden" id="nova-senha-modal">
+  <div class="modal-container">
+      <div class="modal" id="Pop-up-nova-senha">
+          <button class="btn-fechar">⨉</button>
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+          <h2 class="fontePopup">Criar Nova Senha</h2>
+
+          
+      
+          <p class="fontePopupDescricao">Solicitaremos essa senha sempre que você fizer login.
+          </p>
+          
+          <div class="inputsNovaSenha">
+              <input class="inputVerificacao" type = "password"  name="nova senha" class="inputformulario" placeholder="Nova Senha" id="inputNovaSenha">
+
+              <p  id="avisoSenha">As senhas devem ter pelo menos 6 caracteres.</p>
+
+              <input class="inputVerificacao" type = "password" name="repetir nova senha" class="inputformulario" placeholder="Digite Novamente" id="inputNovaSenharepita">
+          </div>
+          
+      
+          
+
+          <div class="buttonPopup">
+              <form>
+              <input  type="button" class="buttonPadrao" value="Salvar Alterações" id="salvar-senha">
+
+              </form>    
+           </div>   
+        </div>
+      </div>      
+  </div> 
+
+
+
+
+
+<!--Tela Popup Cadastre-se-->
+
+<section class="modal-hidden" id="cadastrar-login-modal">
+
+      <div class="modal-container">
+        <div class="modal" id="cadastro">
+          
+          <div class="alinhamentoCadastro"> 
+
+              <button class="btn-fechar">⨉</button>
+
+              <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+
+              <h2 class="fontePopup">Cadastre-se Aqui</h2>
+
+          <form class="formularioCadastro" id="formulario-cadastrar">
+              <label for="inputPopupNome">
+                <input type="text" class="inputVerificacao" placeholder="Nome" id="inputPopupNome">
+                <span id="span-cadastro-nome">preenchimento  obrigatório</span>
+              </label>
+              <label for="inputPopupSobreNome">
+                <input type="text" class="inputVerificacao" placeholder="Sobrenome" id="inputPopupSobrenome">
+                <span id="span-cadastro-sobrenome">preenchimento  obrigatório</span>
+              </label>
+              <label for="inputPopupTelefone">
+                <input type="tel" class="inputVerificacao" placeholder="Telefone" id="inputPopupTelefone">
+                <span id="span-cadastro-telefone">O número de telefone deve contar no mínimo 9 dígitos</span>
+              </label>
+              <label for="inputPopupEmail">
+                <input type="text" class="inputVerificacao" placeholder="E-mail" id="inputPopupEmail">
+                <span id="span-cadastro-email">formato de email ínvalido</span>
+              </label>
+              <label for="inputPopupSenha">
+                <input type="password"  class="inputVerificacao" placeholder="Senha"  id="inputPopupSenha">
+                <span id="span-cadastro-senha">a senha deve  conter no mínimo 8 caracteres</span>
+              </label>    
+              <input type="submit" class="buttonPadrao"  value="Cadastrar" id="cadastroButton"> 
+
+              
+            
+          </form>    
+
+              <div class="buttonPopupCadastro">
+                 
+              </div>
+          </div>
+        </div>
+      </div>    
+</section>
+
+
+<!--Tela Popup de usuário Logado-->
+
+<section class="modal-hidden" id="Usuario-logado-modal">
+
+  <div class="modal-container">
+    <div class="modal" id="cadastro">
+      
+      <div class="alinhamentoAgendamento"> 
+
+          <p><a class="logout" id="click-logoutAgendamento"><strong>Logout</strong></a></p>
+
+          <img src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+
+              <input type="button" class="buttonPadrao2" value="Agendar um Horário" id="agendarbutton">
+              <input  type="button" class="buttonPadrao2" value="Meus Horários Agendados" id="agendamentosbutton">  
+
+      </div>
+    </div>
+   </div>   
+</section>
+
+
+<!--Tela Popup horarios agendados-->
+
+<section class="modal-hidden" id="horarios-agendados-modal">
+
+  <div class="modal-container">
+  <div class="modal" id="cadastro">
+      
+      <div class="alinhamentoTelaDeAgendamento"> 
+
+          <p><a class="logoutAgendamento" id="click-logout-agendamentos-marcados"><strong>Logout</strong></a></p>
+
+          <img class="logoAgendamento" src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno" id="logoTelaDeAgendamentos">
+
+          <div class="meusAgendamentos">
+
+              <div class="descricaoAgendamento" id="primeiraDescricaoAgenda">
+
+                  <section  class="linkAgendamento01" id="linkAgendamento1"> 
+                  <p class="fonteDescricao">Dra. Patricia</p>
+                  <p class="fonteDescricao">Data : 16/06/2023  |  16:00 Horas</p>
+                  <p class="fonteDescricao">Estr. do Campo Limpo, 3404 - Vila Prel São Paulo - SP, 05777-000</p>
+              </section>
+              </div>
+
+              <div class="descricaoAgendamento">
+                <p class="fonteDescricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quis dolor, impedit mollitia eos porro eveniet eum illo, deleniti necessitatibus delectus repellendus explicabo laboriosam facilis dolore sequi ut! Natus, rem!</p>
+                  
+              </div>
+
+              <div class="descricaoAgendamento">
+
+          
+                  
+              </div>
+
+          </div>
+          
+
+          
+      </div>
+</section>
+
+<!--Tela Popup agendamento selecionado-->
+
+<section class="modal-hidden" id="horario-agendado-selecionado">
+
+  <div class="modal-container">
+  <div class="modal" id="cadastro">
+      
+      <div class="alinhamentoAgendamento02"> 
+
+          <p><a class="logoutAgendamento" id="click-logout-agendamento-selecionado"><strong>Logout</strong></a></p>
+
+          <img class="logoAgendamento2" src="/Assets/imagens-login/logo_header.svg" alt="logo_pequeno">
+
+          <div class="meusAgendamentoSelecionado">
+
+              <div  class="descricaoAgendamentoMarcado" id="agendamentoMarcado01">
+                  
+                  <img class="retanguloAgendamentos" src="/Assets/imagens-login/agendar_consulta_01.svg" alt="retanguloDeAgendamentos" id="imagemTelaDeAgendamento">
+                      <div class="caixaDescricao">
+                        <p   class="fonteDescricao2">Dra. Patricia</p>
+                        <p class="fonteDescricao2">Especialista em Ortodontia</p>
+                        <p class="fonteDescricao2">Data : 16/06/2023</p>
+                        <p class="fonteDescricao2">Horário : 16:00</p>
+                      </div>
+                      
+                  
+              
+              <div class="BotoesAgendamentoMarcado" >
+                  
+              <input  type="button" class="buttonPadrao3" value="Confirmar" id="agendarbuttonConfirmar">
+
+              <input  type="button" class="buttonPadrao4" value="Cancelar" id="agendamentosbutton3"> 
+                      
+              </div>
+
+              
+
+          </div>
+          
+
+          
+      </div>
+</section> 
+
+
+
+
+  </body>
+</html>
