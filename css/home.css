@@ -76,7 +76,7 @@ main section figure {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 60px;
+  line-height: 40px;
   align-items: center;
   text-align: center;
   margin-top: -10rem;
@@ -90,15 +90,16 @@ main section figure {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 40px;
   align-items: center;
   text-align: center;
   color: #365B6D;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin-top: 10rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 section article p + p {
@@ -127,7 +128,7 @@ section figure img {
 
 
 
-nav {
+/* nav {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -141,9 +142,9 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+} */
 
-header nav ul {
+/* header nav ul {
   display: flex;
 }
 
@@ -153,7 +154,7 @@ nav img {
   margin-left: 58px;
   margin-right: 20px;
 }
-
+ */
 
 
 /* Media Queries */
@@ -320,3 +321,107 @@ nav img {
     transform: translate(-50%, -50%);
   }
 }
+
+/* ****************** carrossel serviços *************** */
+
+.slide .flip-card-inner {
+  width: 340px;
+  height: 350px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.slide:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.slide .flip-card-front,
+.slide .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.slide .flip-card-front {
+  z-index: 2;
+}
+
+.slide .flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.slide .flip-card-front img,
+.slide .flip-card-back p {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.slide .flip-card-back {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide .flip-card-back h3 {
+  margin-top: 0;
+}
+
+section div div div div div h3 {
+  position: absolute;
+  left: 14.41%;
+  right: 14.41%;
+  top: 70.29%;
+  bottom: 21.71%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #000000;
+}
+
+.slide-box {
+  width: 1099px;
+  height: 402px;
+  position: inherit;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 20px solid #A58272;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 30px auto 0;
+}
+
+.background-filter-content {
+  width: 1440px;
+  height: 675px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #99D9D9;
+  clip-path: polygon(0 11%, 100% 29%, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 60%);
+  z-index: -1;
+}
+
+section div div div div div p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: black;
+}
+
+/* *******************FIM************************* */
