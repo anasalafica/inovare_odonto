@@ -1,6 +1,6 @@
  
 .header-menu-responsivo .menu-responsivo-c {
-    position: fixed;
+    /* position: flex; */
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@
 
     .menu-responsivo-section.on .menu-burguer {
         position: absolute;
-        right: 60px;
+        right: 40px;
         top: 40px;
     }
 
