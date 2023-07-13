@@ -1,6 +1,6 @@
  
 .header-menu-responsivo .menu-responsivo-c {
-    /* position: flex; */
+    position: flex;
     height: 120px;
     display: flex;
     justify-content: space-between;
