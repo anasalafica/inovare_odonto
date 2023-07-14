@@ -29,7 +29,28 @@
 
     <body>
 
-        <header class="header-menu-responsivo">
+        <header>
+            <nav class="navbar">
+                <img class="navbar__logo" src="/blog/image/Logotipo_inovareodonto.svg" alt="logomarca"><a href="#" class="logo"></a>
+        
+                <div class="navbar__toggle">
+                    <div class="bar bar--1"></div>
+                    <div class="bar bar--2"></div>
+                    <div class="bar bar--3"></div>
+                </div>
+        
+                <ul class="navbar__menu">
+                    <li class="navbar__item navbar__item--1"><a href="#" class="nav__link">Serviços</a></li>
+                    <li class="navbar__item navbar__item--2"><a href="#" class="nav__link">Agendar</a></li>
+                    <li class="navbar__item navbar__item--3"><a href="#" class="nav__link">Sobre</a></li>
+                    <li class="navbar__item navbar__item--4"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="navbar__item navbar__item--5"><a href="#" class="nav__link">Contato</a></li>
+                    <li class="navbar__item navbar__item--6"><a href="#" class="nav__link">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- <header class="header-menu-responsivo">
 
             <div class="menu-responsivo-c">
 
@@ -49,18 +70,67 @@
                         <ul class="selecao-menu-responsivo">
                             <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Serviços</a></li>
                             <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Agendar</a></li>
-                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Sobre</a></li>
-                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Blog</a></li>
-                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Contato</a></li>
+                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#sobre">Sobre</a></li>
+                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#blog">Blog</a></li>
+                            <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#contato">Contato</a></li>
                             <li class="btn-menu-responsivo"><a class="btn-menu-responsivo-a" href="#">Login</a></li>
                         </ul>
                     </nav>
+
+                </div> 
+
+                <button onclick="animarMenu()" id="btn-menu-burguer">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+                 
+   ------------------------JS-BOTÃO HAMBURGUER--------------------
+                <script>
+
+                    function animarMenu(){
+                        const menuDiv = document.getElementById('menu-mobile')
+                        const btnAnimar = document.getElementById('btn-menu-burguer')
+                        console.log('animarMenu')
+                        const btnMenuDiv = document.getElementById('btn-menu-burguer')
+                        btnAnimar.classList.toggle('aberto')
+                        menuDiv.classList.toggle('funcionando')
+                        // btnAnimar.classList.toggle('ativo')
+                        
+                        console.log(menuDiv)
+                        console.log(btnAnimar)
+                        
+                    }
+                </script>
+
+               ------------------------FIM--------------------
+
+
+                <div class="menu-responsivo-section-mobile" id="menu-mobile">
+
+                    <div class="menu-burguer">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div> 
+
+                    <nav class="nav-menu-responsivo-mobile">
+                        <div class="selecao-menu-responsivo-mobile">
+                            <a class="btn-menu-responsivo-a-mobile" href="#">Serviços</a></li>
+                            <a class="btn-menu-responsivo-a-mobile" href="#">Agendar</a></li>
+                            <a class="btn-menu-responsivo-a-mobile" href="#sobre">Sobre</a></li>
+                            <a class="btn-menu-responsivo-a-mobile" href="#blog">Blog</a></li>
+                            <a class="btn-menu-responsivo-a-mobile" href="#contato">Contato</a></li>
+                            <a class="btn-menu-responsivo-a-mobile" href="#">Login</a></li>
+                        </div>
+                    </nav>
+
                 </div>
 
                 
             </div>
 
-        </header>
+        </header> -->
 
         <section id="sobre">
             <div class="p">
@@ -345,92 +415,97 @@
 
         </section>
 
-        <div class="tx-contato">
-            <section class="titulo-contato-novo">
-                <h1>CONTATO</h1>
-                <div>
-                    <p>Se você tem alguma dúvida, sugestão ou</p>
-                    <p>reclamação, entre em contato conosco:</p>
-                </div>
-            </section>
-        </div>
-        <section>
-            <div class="miolo">
-                <div class="dados">
-                    <p class="telefone">
-                        <img class="icon"
-                            src="/Assets/Imagem_Contato/icon_phone.svg"
-                            alt="Icone do Telefone" width="50px" height="50px">
-                        <a>+55 (11) 3344-9876</a>
-                    </p>
-                    <p class="whatsapp">
-                        <img class="icon"
-                            src="/Assets/Imagem_Contato/icon_whatsapp.svg"
-                            alt="Icone Whatsapp" width="50px" height="50px">
-                        <a>(11) 99898-1221</a>
-                    </p>
-                    <p class="mail">
-                        <img class="icon"
-                            src="/Assets/Imagem_Contato/icon_mail.svg"
-                            alt="Icone Mail" width="50px" height="50px">
-                        <a>contato@inovareodonto.com</a>
-                    </p>
-                    <p class="local">
-                        <img class="icon"
-                            src="/Assets/Imagem_Contato/icon_pin_alt.svg"
-                            alt="Icone Local" width="50px" height="50px">
-                        <a>
-                            <span class="linha1">Estr. do Campo Limpo, 3404 -
-                                Vila Prel</span>
-                            <span class="linha2">São Paulo - SP, 05777-000</span>
-                        </a>
-                    </p>
-                </div>
+        <section id="contato">
 
-                <div class="form-container">
-                    <form id="contact-form" method="POST">
-                        <input type="text" placeholder="Nome" id="nome"
-                            name="nome" required>
-                        <div id="nome-erro" class="mensagem-erro"></div>
-                        <br>
-                        <input type="email" placeholder="E-mail" id="email"
-                            name="email" required>
-                        <div id="email-erro" class="mensagem-erro"></div>
-                        <br>
-                        <input type="tel" placeholder="Telefone" id="telefone"
-                            name="telefone">
-                        <div id="telefone-erro" class="mensagem-erro"></div>
-                        <br>
-                        <textarea id="mensagem" placeholder="Mensagem"
-                            name="mensagem" rows="5" cols="30" required></textarea>
-                        <div id="mensagem-erro" class="mensagem-erro"></div>
-                        <br>
-                        <input class="buttonPadrao" type="submit"
-                            value="Enviar Mensagem">
-                    </form>
-                </div>
-                <div class="popup-overlay" id="popup">
-                    <div class="popup-content">
-                        <h2><p>Prezado(a) cliente,</p>
-                            <p>Agradecemos o seu contato e o seu interesse.
-                                Ficamos felizes em saber que você está cuidando
-                                da sua saúde bucal e que confia em nosso
-                                trabalho.</p>
-                            <p>Em breve, entraremos em contato com você para
-                                tirar todas as suas dúvidas. Enquanto isso, você
-                                pode acessar o nosso site e conhecer mais sobre
-                                os nossos tratamentos, dicas e promoções.</p>
-                            <p>Esperamos atendê-lo(a) em breve e oferecer o
-                                melhor sorriso para você.</p>
-                            <p>Atenciosamente,</p>
-                            <p>Equipe Inovare Odonto.</p></h2>
-                        <button onclick="fecharPopup()">Fechar</button>
+            <div class="tx-contato">
+                <section class="titulo-contato-novo">
+                    <h1>CONTATO</h1>
+                    <div>
+                        <p>Se você tem alguma dúvida, sugestão ou</p>
+                        <p>reclamação, entre em contato conosco:</p>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <div class="miolo">
+                    <div class="dados">
+                        <p class="telefone">
+                            <img class="icon"
+                                src="/Assets/Imagem_Contato/icon_phone.svg"
+                                alt="Icone do Telefone" width="50px" height="50px">
+                            <a>+55 (11) 3344-9876</a>
+                        </p>
+                        <p class="whatsapp">
+                            <img class="icon"
+                                src="/Assets/Imagem_Contato/icon_whatsapp.svg"
+                                alt="Icone Whatsapp" width="50px" height="50px">
+                            <a>(11) 99898-1221</a>
+                        </p>
+                        <p class="mail">
+                            <img class="icon"
+                                src="/Assets/Imagem_Contato/icon_mail.svg"
+                                alt="Icone Mail" width="50px" height="50px">
+                            <a>contato@inovareodonto.com</a>
+                        </p>
+                        <p class="local">
+                            <img class="icon"
+                                src="/Assets/Imagem_Contato/icon_pin_alt.svg"
+                                alt="Icone Local" width="50px" height="50px">
+                            <a>
+                                <span class="linha1">Estr. do Campo Limpo, 3404 -
+                                    Vila Prel</span>
+                                <span class="linha2">São Paulo - SP, 05777-000</span>
+                            </a>
+                        </p>
+                    </div>
+    
+                    <div class="form-container">
+                        <form id="contact-form" method="POST">
+                            <input type="text" placeholder="Nome" id="nome"
+                                name="nome" required>
+                            <div id="nome-erro" class="mensagem-erro"></div>
+                            <br>
+                            <input type="email" placeholder="E-mail" id="email"
+                                name="email" required>
+                            <div id="email-erro" class="mensagem-erro"></div>
+                            <br>
+                            <input type="tel" placeholder="Telefone" id="telefone"
+                                name="telefone">
+                            <div id="telefone-erro" class="mensagem-erro"></div>
+                            <br>
+                            <textarea id="mensagem" placeholder="Mensagem"
+                                name="mensagem" rows="5" cols="30" required></textarea>
+                            <div id="mensagem-erro" class="mensagem-erro"></div>
+                            <br>
+                            <input class="buttonPadrao" type="submit"
+                                value="Enviar Mensagem">
+                        </form>
+                    </div>
+                    <div class="popup-overlay" id="popup">
+                        <div class="popup-content">
+                            <h2><p>Prezado(a) cliente,</p>
+                                <p>Agradecemos o seu contato e o seu interesse.
+                                    Ficamos felizes em saber que você está cuidando
+                                    da sua saúde bucal e que confia em nosso
+                                    trabalho.</p>
+                                <p>Em breve, entraremos em contato com você para
+                                    tirar todas as suas dúvidas. Enquanto isso, você
+                                    pode acessar o nosso site e conhecer mais sobre
+                                    os nossos tratamentos, dicas e promoções.</p>
+                                <p>Esperamos atendê-lo(a) em breve e oferecer o
+                                    melhor sorriso para você.</p>
+                                <p>Atenciosamente,</p>
+                                <p>Equipe Inovare Odonto.</p></h2>
+                            <button onclick="fecharPopup()">Fechar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+    
+            </section>
+    
         </section>
 
+       
         <!-- ************* BOTAO DE ROLAGEM AUTOMATICA PARA TOPO DA PAGINA******** -->
 
         <div id="btn-top">
