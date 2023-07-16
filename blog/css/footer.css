@@ -7,8 +7,12 @@ footer {
   }
 
   .footer-col {
-    width: 25%;
-    padding: 0 15px;
+    
+    /* width: 25%; */
+    padding: 0 100px;
+    align-items: center;
+    justify-content: center;
+   
   }
   
   .footer-col h4 {
@@ -18,14 +22,18 @@ footer {
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
+
   }
   
   .footer-col ul {
     list-style: none;
+    
+    
   }
   
   .footer-col ul li {
     margin: 30px 0;
+    
   }
   
   .footer-col ul li a {
@@ -36,6 +44,7 @@ footer {
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+
   }
 
   .footer-col ul li a:hover {
