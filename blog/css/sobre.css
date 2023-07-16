@@ -13,10 +13,10 @@
 .p {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  margin: 1.875rem 5rem;
+  margin: 1.875rem;
   font-weight: 4.375rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   flex-direction: column;
   display: flex;
   align-items: center;
