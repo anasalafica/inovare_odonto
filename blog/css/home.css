@@ -1,0 +1,144 @@
+
+/* ******************************MEDIAS-SOCIAIS************************* */
+
+.medias-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60rem;
+    margin-top: -50px;
+}    
+
+.medias-sociais a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.medias-sociais a:hover {
+    background: #a58272;
+}
+
+.medias-sociais a i {
+    transition: 00.4s all;
+}
+
+.medias-sociais a:hover > i {
+    transform: scale(1.6) rotate(25deg);
+}
+
+/* **************************** FIM ************************************** */
+
+
+
+.section-container {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  main section figure {
+    padding-left: 20rem;
+  }
+  
+  .btn-agendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    padding: 28px 29px;
+    gap: 10px;
+    width: 200px;
+    height: 65px;
+    background: #41C1BA;
+    border-radius: 20px;
+    transition: background-color 0.4s;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 15px;
+    color: #365B6D;
+  }
+  
+  .btn-agendar:hover {
+    background-color: #a58272
+  }
+  
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin-top: -5.6rem;
+    margin-left: -30rem;
+    color: #3A7B84;
+  }
+  
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    color: #365B6D;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  section article p + p {
+    margin-top: 0rem;
+  }
+  
+  .social-midia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60rem;
+    margin-top: -50px;
+  }
+  
+  section figure img {
+    margin: 0 10px;
+  }
+
+  .direita {
+    margin-left: 150px;
+  }
+
+  .right {
+    margin-right: 50px;
+  }
+  
+  .Toothbrush {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-right: 20rem;
+  }
+  

@@ -7,31 +7,17 @@
 
 /* Global styles */
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  background-color: #F0EFEA;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow-x: hidden;
+
+
+
+
+/* .main-container {
   position: relative;
-}
-
-
-main {
- 
-flex: 1;
-}
-
-.main-container {
-  position: relative;
-}
+} */
 
 .section-container {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +33,7 @@ main section figure {
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 0px;
   padding: 28px 29px;
   gap: 10px;
   width: 376px;
@@ -59,7 +45,7 @@ main section figure {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 15px;
   color: #365B6D;
 }
@@ -75,12 +61,13 @@ main section figure {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 25px;
   align-items: center;
   text-align: center;
-  margin-top: -10rem;
-  margin-left: -50rem;
+  margin-top: -5.6rem
+  ;
+  margin-left: -30rem;
   color: #3A7B84;
 }
 
@@ -160,7 +147,7 @@ nav img {
 /* Media Queries */
 
 /* Mobile devices */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   body {
     background-position: top;
     background-attachment: scroll;
@@ -227,10 +214,10 @@ nav img {
     height: 30px;
     margin-top: 20px;
   }
-}
+} */
 
 /* Tablets and small desktop screens */
-@media (min-width: 768px) and (max-width: 1199px) {
+/* @media (min-width: 768px) and (max-width: 1199px) {
   .section-container {
     flex-direction: column;
   }
@@ -292,10 +279,10 @@ nav img {
     height: 30px;
     margin-top: 20px;
   }
-}
+} */
 
 /* Large desktop screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .text1 {
     margin-left: -50rem;
   }
@@ -320,7 +307,7 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+} */
 
 /* ****************** carrossel serviços *************** */
 
