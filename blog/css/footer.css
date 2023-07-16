@@ -54,22 +54,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 4rem;
+    padding-right: 0;
   }
   
   .Siga-nos {
     flex: 1;
-    padding-right: 7rem; 
+    padding-right: 0; 
     text-align: center; 
   }
 
-  .Siga-nos .medias-sociais {
-    margin-top: 30px;
+  .Siga-nos .midias-sociais {
+    margin-top: 50px;
   }
   
   
   
-  .Siga-nos .medias-sociais a {
+  .Siga-nos .midias-sociais a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -81,16 +81,17 @@ footer {
     transition: all 0.5s ease;
   }
   
-  .Siga-nos .medias-sociais a i{
+  .Siga-nos .midias-sociais a i{
     font-size: 50px;
   }
   
-  .Siga-nos .medias-sociais a:hover {
+  .Siga-nos .midias-sociais a:hover {
     color: #41C1BA;  
   }
   
   .texto-form {
     font-size: 10px;
+    line-height: 20px;
   }
   
   .form-sub {
@@ -131,4 +132,8 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .inscrever-se {
+    margin-top: 50px;
   }
