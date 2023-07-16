@@ -125,7 +125,7 @@ hr {
   justify-content: center;
 	text-align: center;
 	font-size: 3rem;
-	/* margin-bottom: 10px; */
+	margin-bottom: 2rem;
 }
 
 .mais-noticias-c {
@@ -133,6 +133,8 @@ hr {
 	flex-wrap: wrap;
 	justify-content: center;
   overflow-x: hidden;
+  text-align: justify;
+  margin-bottom: 2rem;
 }
 
 .noticia {
