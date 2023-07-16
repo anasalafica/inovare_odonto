@@ -1,3 +1,81 @@
+
+/* ******************************MEDIAS-SOCIAIS************************* */
+
+.medias-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60rem;
+    margin-top: -50px;
+}    
+
+.medias-sociais a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.medias-sociais a:hover {
+    background: #a58272;
+}
+
+.medias-sociais a i {
+    transition: 00.4s all;
+}
+
+.medias-sociais a:hover > i {
+    transform: scale(1.6) rotate(25deg);
+}
+
+/* **************************** FIM ************************************** */
+
+/* ****************************EFEITO BOTÃO AGENDAR *************************** */
+
+.btn-efeito-ripple {
+    padding: 30px 50px;
+    background-color: #282828;
+    color: #fff;
+    border-radius: 120px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-efeito-ripple span {
+    font-size: 30px;
+    position: relative;
+    z-index: 999999;
+}
+
+.btn-efeito-ripple::before {
+    content: '';
+    background-color: #fe6600;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: width .7s, height .7s;
+}
+
+.btn-efeito-ripple:hover::before {
+    width: 1000px;
+    height: 1000px;
+}
+
+/* **************************** FIM ************************************** */
+
+
 .section-container {
     margin-top: -20px;
     display: flex;
