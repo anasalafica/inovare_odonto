@@ -142,7 +142,7 @@
     margin-right: 20rem;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1000px) {
     .section-container {
       flex-direction: column;
     }
