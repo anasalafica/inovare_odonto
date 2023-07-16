@@ -47,6 +47,14 @@ body {
     display: flex;
     color: #365B6D;
     font-size: 16px;
+    padding: 8px 20px;
+}
+
+.navbar__menu .navbar__item .nav__link:hover {
+    background-color: #99D9D9;
+    transition: 0.3s;
+    border-radius: 50px;
+    
 }
 
 @media only screen and (max-width: 760px) {
