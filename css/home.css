@@ -217,9 +217,13 @@ nav img {
 } */
 
 /* Tablets and small desktop screens */
-/* @media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 960px) {
   .section-container {
     flex-direction: column;
+  }
+
+  .right {
+    display: none;
   }
 
   main section figure {
@@ -279,7 +283,7 @@ nav img {
     height: 30px;
     margin-top: 20px;
   }
-} */
+}
 
 /* Large desktop screens */
 /* @media (min-width: 1200px) {
